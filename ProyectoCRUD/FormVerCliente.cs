@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace ProyectoCRUD
 {
-    public partial class Form1 : Form
+    public partial class FormVerCliente : Form
     {
-        public Form1()
+        public FormVerCliente()
         {
             InitializeComponent();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblNombreProyecto_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
