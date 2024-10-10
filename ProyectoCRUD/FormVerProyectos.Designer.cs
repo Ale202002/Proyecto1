@@ -28,472 +28,492 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dGVProyectosFVP = new System.Windows.Forms.DataGridView();
-            this.labelTitulo = new System.Windows.Forms.Label();
-            this.txtBuscarProyectoFVP = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.btnEditarProyectoFVP = new System.Windows.Forms.Button();
-            this.btnGuardarProyectoFVP = new System.Windows.Forms.Button();
-            this.btnCancelarFVP = new System.Windows.Forms.Button();
-            this.btnEliminarProyectoFVP = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.checkBoxDescuentoFVP = new System.Windows.Forms.CheckBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.txtFechaCierreFVP = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.txtFechaInicioFVP = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.txtCostoTotalFVP = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.comboBoxEstadoPagoFVP = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.comboTipoServicioFVP = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtNombreClienteFVP = new System.Windows.Forms.TextBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.txtNombreProyectoFVP = new System.Windows.Forms.TextBox();
-            this.lblNombreProyecto = new System.Windows.Forms.Label();
-            this.pictureBoxSearchFVP = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dGVProyectosFVP)).BeginInit();
-            this.groupBox1.SuspendLayout();
-            this.panel10.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel9.SuspendLayout();
-            this.panel8.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearchFVP)).BeginInit();
-            this.SuspendLayout();
+            dGVProyectosFVP = new System.Windows.Forms.DataGridView();
+            labelTitulo = new System.Windows.Forms.Label();
+            txtBuscarProyectoFVP = new System.Windows.Forms.TextBox();
+            groupBox1 = new System.Windows.Forms.GroupBox();
+            panel10 = new System.Windows.Forms.Panel();
+            btnEditarProyectoFVP = new System.Windows.Forms.Button();
+            btnGuardarProyectoFVP = new System.Windows.Forms.Button();
+            btnCancelarFVP = new System.Windows.Forms.Button();
+            btnEliminarProyectoFVP = new System.Windows.Forms.Button();
+            panel1 = new System.Windows.Forms.Panel();
+            panel9 = new System.Windows.Forms.Panel();
+            checkBoxDescuentoFVP = new System.Windows.Forms.CheckBox();
+            label7 = new System.Windows.Forms.Label();
+            panel8 = new System.Windows.Forms.Panel();
+            txtFechaCierreFVP = new System.Windows.Forms.TextBox();
+            label6 = new System.Windows.Forms.Label();
+            panel6 = new System.Windows.Forms.Panel();
+            txtFechaInicioFVP = new System.Windows.Forms.TextBox();
+            label4 = new System.Windows.Forms.Label();
+            panel7 = new System.Windows.Forms.Panel();
+            txtCostoTotalFVP = new System.Windows.Forms.TextBox();
+            label5 = new System.Windows.Forms.Label();
+            panel5 = new System.Windows.Forms.Panel();
+            comboBoxEstadoPagoFVP = new System.Windows.Forms.ComboBox();
+            label3 = new System.Windows.Forms.Label();
+            panel3 = new System.Windows.Forms.Panel();
+            comboTipoServicioFVP = new System.Windows.Forms.ComboBox();
+            label1 = new System.Windows.Forms.Label();
+            panel4 = new System.Windows.Forms.Panel();
+            label2 = new System.Windows.Forms.Label();
+            txtNombreClienteFVP = new System.Windows.Forms.TextBox();
+            panel2 = new System.Windows.Forms.Panel();
+            txtNombreProyectoFVP = new System.Windows.Forms.TextBox();
+            lblNombreProyecto = new System.Windows.Forms.Label();
+            pictureBoxSearchFVP = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)dGVProyectosFVP).BeginInit();
+            groupBox1.SuspendLayout();
+            panel10.SuspendLayout();
+            panel1.SuspendLayout();
+            panel9.SuspendLayout();
+            panel8.SuspendLayout();
+            panel6.SuspendLayout();
+            panel7.SuspendLayout();
+            panel5.SuspendLayout();
+            panel3.SuspendLayout();
+            panel4.SuspendLayout();
+            panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxSearchFVP).BeginInit();
+            SuspendLayout();
             // 
             // dGVProyectosFVP
             // 
-            this.dGVProyectosFVP.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(63)))), ((int)(((byte)(62)))));
-            this.dGVProyectosFVP.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dGVProyectosFVP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dGVProyectosFVP.Location = new System.Drawing.Point(12, 55);
-            this.dGVProyectosFVP.Name = "dGVProyectosFVP";
-            this.dGVProyectosFVP.RowHeadersWidth = 51;
-            this.dGVProyectosFVP.RowTemplate.Height = 24;
-            this.dGVProyectosFVP.Size = new System.Drawing.Size(976, 248);
-            this.dGVProyectosFVP.TabIndex = 0;
+            dGVProyectosFVP.BackgroundColor = System.Drawing.Color.FromArgb(64, 63, 62);
+            dGVProyectosFVP.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            dGVProyectosFVP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dGVProyectosFVP.Location = new System.Drawing.Point(12, 69);
+            dGVProyectosFVP.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            dGVProyectosFVP.Name = "dGVProyectosFVP";
+            dGVProyectosFVP.RowHeadersWidth = 51;
+            dGVProyectosFVP.RowTemplate.Height = 24;
+            dGVProyectosFVP.Size = new System.Drawing.Size(976, 310);
+            dGVProyectosFVP.TabIndex = 0;
             // 
             // labelTitulo
             // 
-            this.labelTitulo.AutoSize = true;
-            this.labelTitulo.Font = new System.Drawing.Font("Constantia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTitulo.ForeColor = System.Drawing.Color.White;
-            this.labelTitulo.Location = new System.Drawing.Point(284, 21);
-            this.labelTitulo.Name = "labelTitulo";
-            this.labelTitulo.Size = new System.Drawing.Size(128, 21);
-            this.labelTitulo.TabIndex = 1;
-            this.labelTitulo.Text = "Buscar Proyecto";
+            labelTitulo.AutoSize = true;
+            labelTitulo.Font = new System.Drawing.Font("Constantia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            labelTitulo.ForeColor = System.Drawing.Color.White;
+            labelTitulo.Location = new System.Drawing.Point(284, 26);
+            labelTitulo.Name = "labelTitulo";
+            labelTitulo.Size = new System.Drawing.Size(128, 21);
+            labelTitulo.TabIndex = 1;
+            labelTitulo.Text = "Buscar Proyecto";
             // 
             // txtBuscarProyectoFVP
             // 
-            this.txtBuscarProyectoFVP.Location = new System.Drawing.Point(429, 20);
-            this.txtBuscarProyectoFVP.Name = "txtBuscarProyectoFVP";
-            this.txtBuscarProyectoFVP.Size = new System.Drawing.Size(201, 22);
-            this.txtBuscarProyectoFVP.TabIndex = 2;
+            txtBuscarProyectoFVP.Location = new System.Drawing.Point(429, 25);
+            txtBuscarProyectoFVP.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            txtBuscarProyectoFVP.Name = "txtBuscarProyectoFVP";
+            txtBuscarProyectoFVP.Size = new System.Drawing.Size(201, 27);
+            txtBuscarProyectoFVP.TabIndex = 2;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.panel10);
-            this.groupBox1.Controls.Add(this.panel1);
-            this.groupBox1.ForeColor = System.Drawing.SystemColors.Control;
-            this.groupBox1.Location = new System.Drawing.Point(12, 309);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(976, 494);
-            this.groupBox1.TabIndex = 4;
-            this.groupBox1.TabStop = false;
+            groupBox1.Controls.Add(panel10);
+            groupBox1.Controls.Add(panel1);
+            groupBox1.ForeColor = System.Drawing.SystemColors.Control;
+            groupBox1.Location = new System.Drawing.Point(12, 386);
+            groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            groupBox1.Size = new System.Drawing.Size(976, 618);
+            groupBox1.TabIndex = 4;
+            groupBox1.TabStop = false;
             // 
             // panel10
             // 
-            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(63)))), ((int)(((byte)(62)))));
-            this.panel10.Controls.Add(this.btnEditarProyectoFVP);
-            this.panel10.Controls.Add(this.btnGuardarProyectoFVP);
-            this.panel10.Controls.Add(this.btnCancelarFVP);
-            this.panel10.Controls.Add(this.btnEliminarProyectoFVP);
-            this.panel10.Location = new System.Drawing.Point(627, 113);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(233, 310);
-            this.panel10.TabIndex = 7;
+            panel10.BackColor = System.Drawing.Color.FromArgb(64, 63, 62);
+            panel10.Controls.Add(btnEditarProyectoFVP);
+            panel10.Controls.Add(btnGuardarProyectoFVP);
+            panel10.Controls.Add(btnCancelarFVP);
+            panel10.Controls.Add(btnEliminarProyectoFVP);
+            panel10.Location = new System.Drawing.Point(627, 141);
+            panel10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            panel10.Name = "panel10";
+            panel10.Size = new System.Drawing.Size(233, 388);
+            panel10.TabIndex = 7;
             // 
             // btnEditarProyectoFVP
             // 
-            this.btnEditarProyectoFVP.BackColor = System.Drawing.Color.DimGray;
-            this.btnEditarProyectoFVP.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEditarProyectoFVP.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnEditarProyectoFVP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditarProyectoFVP.Location = new System.Drawing.Point(29, 40);
-            this.btnEditarProyectoFVP.Name = "btnEditarProyectoFVP";
-            this.btnEditarProyectoFVP.Size = new System.Drawing.Size(175, 45);
-            this.btnEditarProyectoFVP.TabIndex = 6;
-            this.btnEditarProyectoFVP.Text = "Editar";
-            this.btnEditarProyectoFVP.UseVisualStyleBackColor = false;
+            btnEditarProyectoFVP.BackColor = System.Drawing.Color.DimGray;
+            btnEditarProyectoFVP.Cursor = System.Windows.Forms.Cursors.Hand;
+            btnEditarProyectoFVP.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            btnEditarProyectoFVP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            btnEditarProyectoFVP.Location = new System.Drawing.Point(29, 50);
+            btnEditarProyectoFVP.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            btnEditarProyectoFVP.Name = "btnEditarProyectoFVP";
+            btnEditarProyectoFVP.Size = new System.Drawing.Size(175, 56);
+            btnEditarProyectoFVP.TabIndex = 6;
+            btnEditarProyectoFVP.Text = "Editar";
+            btnEditarProyectoFVP.UseVisualStyleBackColor = false;
             // 
             // btnGuardarProyectoFVP
             // 
-            this.btnGuardarProyectoFVP.BackColor = System.Drawing.Color.DimGray;
-            this.btnGuardarProyectoFVP.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnGuardarProyectoFVP.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnGuardarProyectoFVP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardarProyectoFVP.Location = new System.Drawing.Point(29, 167);
-            this.btnGuardarProyectoFVP.Name = "btnGuardarProyectoFVP";
-            this.btnGuardarProyectoFVP.Size = new System.Drawing.Size(175, 45);
-            this.btnGuardarProyectoFVP.TabIndex = 5;
-            this.btnGuardarProyectoFVP.Text = "Guardar";
-            this.btnGuardarProyectoFVP.UseVisualStyleBackColor = false;
+            btnGuardarProyectoFVP.BackColor = System.Drawing.Color.DimGray;
+            btnGuardarProyectoFVP.Cursor = System.Windows.Forms.Cursors.Hand;
+            btnGuardarProyectoFVP.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            btnGuardarProyectoFVP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            btnGuardarProyectoFVP.Location = new System.Drawing.Point(29, 209);
+            btnGuardarProyectoFVP.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            btnGuardarProyectoFVP.Name = "btnGuardarProyectoFVP";
+            btnGuardarProyectoFVP.Size = new System.Drawing.Size(175, 56);
+            btnGuardarProyectoFVP.TabIndex = 5;
+            btnGuardarProyectoFVP.Text = "Guardar";
+            btnGuardarProyectoFVP.UseVisualStyleBackColor = false;
             // 
             // btnCancelarFVP
             // 
-            this.btnCancelarFVP.BackColor = System.Drawing.Color.DimGray;
-            this.btnCancelarFVP.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCancelarFVP.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCancelarFVP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelarFVP.Location = new System.Drawing.Point(29, 229);
-            this.btnCancelarFVP.Name = "btnCancelarFVP";
-            this.btnCancelarFVP.Size = new System.Drawing.Size(175, 45);
-            this.btnCancelarFVP.TabIndex = 0;
-            this.btnCancelarFVP.Text = "Cancelar";
-            this.btnCancelarFVP.UseVisualStyleBackColor = false;
-            this.btnCancelarFVP.Click += new System.EventHandler(this.btnBorrarDatosProyecto_Click);
+            btnCancelarFVP.BackColor = System.Drawing.Color.DimGray;
+            btnCancelarFVP.Cursor = System.Windows.Forms.Cursors.Hand;
+            btnCancelarFVP.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            btnCancelarFVP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            btnCancelarFVP.Location = new System.Drawing.Point(29, 286);
+            btnCancelarFVP.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            btnCancelarFVP.Name = "btnCancelarFVP";
+            btnCancelarFVP.Size = new System.Drawing.Size(175, 56);
+            btnCancelarFVP.TabIndex = 0;
+            btnCancelarFVP.Text = "Cancelar";
+            btnCancelarFVP.UseVisualStyleBackColor = false;
+            btnCancelarFVP.Click += btnBorrarDatosProyecto_Click;
             // 
             // btnEliminarProyectoFVP
             // 
-            this.btnEliminarProyectoFVP.BackColor = System.Drawing.Color.DimGray;
-            this.btnEliminarProyectoFVP.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEliminarProyectoFVP.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnEliminarProyectoFVP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminarProyectoFVP.Location = new System.Drawing.Point(29, 100);
-            this.btnEliminarProyectoFVP.Name = "btnEliminarProyectoFVP";
-            this.btnEliminarProyectoFVP.Size = new System.Drawing.Size(175, 45);
-            this.btnEliminarProyectoFVP.TabIndex = 1;
-            this.btnEliminarProyectoFVP.Text = "Eliminar";
-            this.btnEliminarProyectoFVP.UseVisualStyleBackColor = false;
+            btnEliminarProyectoFVP.BackColor = System.Drawing.Color.DimGray;
+            btnEliminarProyectoFVP.Cursor = System.Windows.Forms.Cursors.Hand;
+            btnEliminarProyectoFVP.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            btnEliminarProyectoFVP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            btnEliminarProyectoFVP.Location = new System.Drawing.Point(29, 125);
+            btnEliminarProyectoFVP.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            btnEliminarProyectoFVP.Name = "btnEliminarProyectoFVP";
+            btnEliminarProyectoFVP.Size = new System.Drawing.Size(175, 56);
+            btnEliminarProyectoFVP.TabIndex = 1;
+            btnEliminarProyectoFVP.Text = "Eliminar";
+            btnEliminarProyectoFVP.UseVisualStyleBackColor = false;
+            btnEliminarProyectoFVP.Click += btnEliminarProyectoFVP_Click;
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.panel9);
-            this.panel1.Controls.Add(this.panel8);
-            this.panel1.Controls.Add(this.panel6);
-            this.panel1.Controls.Add(this.panel7);
-            this.panel1.Controls.Add(this.panel5);
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(68, 30);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(434, 456);
-            this.panel1.TabIndex = 4;
+            panel1.Controls.Add(panel9);
+            panel1.Controls.Add(panel8);
+            panel1.Controls.Add(panel6);
+            panel1.Controls.Add(panel7);
+            panel1.Controls.Add(panel5);
+            panel1.Controls.Add(panel3);
+            panel1.Controls.Add(panel4);
+            panel1.Controls.Add(panel2);
+            panel1.Location = new System.Drawing.Point(68, 38);
+            panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            panel1.Name = "panel1";
+            panel1.Size = new System.Drawing.Size(434, 570);
+            panel1.TabIndex = 4;
             // 
             // panel9
             // 
-            this.panel9.Controls.Add(this.checkBoxDescuentoFVP);
-            this.panel9.Controls.Add(this.label7);
-            this.panel9.Location = new System.Drawing.Point(0, 399);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(434, 54);
-            this.panel9.TabIndex = 6;
+            panel9.Controls.Add(checkBoxDescuentoFVP);
+            panel9.Controls.Add(label7);
+            panel9.Location = new System.Drawing.Point(0, 499);
+            panel9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            panel9.Name = "panel9";
+            panel9.Size = new System.Drawing.Size(434, 68);
+            panel9.TabIndex = 6;
             // 
             // checkBoxDescuentoFVP
             // 
-            this.checkBoxDescuentoFVP.AutoSize = true;
-            this.checkBoxDescuentoFVP.Location = new System.Drawing.Point(277, 19);
-            this.checkBoxDescuentoFVP.Name = "checkBoxDescuentoFVP";
-            this.checkBoxDescuentoFVP.Size = new System.Drawing.Size(18, 17);
-            this.checkBoxDescuentoFVP.TabIndex = 4;
-            this.checkBoxDescuentoFVP.UseVisualStyleBackColor = true;
+            checkBoxDescuentoFVP.AutoSize = true;
+            checkBoxDescuentoFVP.Location = new System.Drawing.Point(277, 24);
+            checkBoxDescuentoFVP.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            checkBoxDescuentoFVP.Name = "checkBoxDescuentoFVP";
+            checkBoxDescuentoFVP.Size = new System.Drawing.Size(18, 17);
+            checkBoxDescuentoFVP.TabIndex = 4;
+            checkBoxDescuentoFVP.UseVisualStyleBackColor = true;
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label7.Location = new System.Drawing.Point(108, 16);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(143, 20);
-            this.label7.TabIndex = 3;
-            this.label7.Text = "Añadir Descuento";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            label7.AutoSize = true;
+            label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            label7.Location = new System.Drawing.Point(108, 20);
+            label7.Name = "label7";
+            label7.Size = new System.Drawing.Size(143, 20);
+            label7.TabIndex = 3;
+            label7.Text = "Añadir Descuento";
+            label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel8
             // 
-            this.panel8.Controls.Add(this.txtFechaCierreFVP);
-            this.panel8.Controls.Add(this.label6);
-            this.panel8.Location = new System.Drawing.Point(0, 284);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(434, 56);
-            this.panel8.TabIndex = 6;
+            panel8.Controls.Add(txtFechaCierreFVP);
+            panel8.Controls.Add(label6);
+            panel8.Location = new System.Drawing.Point(0, 355);
+            panel8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            panel8.Name = "panel8";
+            panel8.Size = new System.Drawing.Size(434, 70);
+            panel8.TabIndex = 6;
             // 
             // txtFechaCierreFVP
             // 
-            this.txtFechaCierreFVP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(63)))), ((int)(((byte)(62)))));
-            this.txtFechaCierreFVP.ForeColor = System.Drawing.SystemColors.Control;
-            this.txtFechaCierreFVP.Location = new System.Drawing.Point(0, 30);
-            this.txtFechaCierreFVP.Name = "txtFechaCierreFVP";
-            this.txtFechaCierreFVP.Size = new System.Drawing.Size(434, 22);
-            this.txtFechaCierreFVP.TabIndex = 2;
+            txtFechaCierreFVP.BackColor = System.Drawing.Color.FromArgb(64, 63, 62);
+            txtFechaCierreFVP.ForeColor = System.Drawing.SystemColors.Control;
+            txtFechaCierreFVP.Location = new System.Drawing.Point(0, 38);
+            txtFechaCierreFVP.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            txtFechaCierreFVP.Name = "txtFechaCierreFVP";
+            txtFechaCierreFVP.Size = new System.Drawing.Size(434, 27);
+            txtFechaCierreFVP.TabIndex = 2;
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label6.Location = new System.Drawing.Point(3, 6);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(134, 20);
-            this.label6.TabIndex = 3;
-            this.label6.Text = "Fecha de Cierre:";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            label6.AutoSize = true;
+            label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            label6.Location = new System.Drawing.Point(3, 8);
+            label6.Name = "label6";
+            label6.Size = new System.Drawing.Size(134, 20);
+            label6.TabIndex = 3;
+            label6.Text = "Fecha de Cierre:";
+            label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.txtFechaInicioFVP);
-            this.panel6.Controls.Add(this.label4);
-            this.panel6.Location = new System.Drawing.Point(0, 229);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(434, 56);
-            this.panel6.TabIndex = 5;
+            panel6.Controls.Add(txtFechaInicioFVP);
+            panel6.Controls.Add(label4);
+            panel6.Location = new System.Drawing.Point(0, 286);
+            panel6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            panel6.Name = "panel6";
+            panel6.Size = new System.Drawing.Size(434, 70);
+            panel6.TabIndex = 5;
             // 
             // txtFechaInicioFVP
             // 
-            this.txtFechaInicioFVP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(63)))), ((int)(((byte)(62)))));
-            this.txtFechaInicioFVP.ForeColor = System.Drawing.SystemColors.Control;
-            this.txtFechaInicioFVP.Location = new System.Drawing.Point(0, 30);
-            this.txtFechaInicioFVP.Name = "txtFechaInicioFVP";
-            this.txtFechaInicioFVP.Size = new System.Drawing.Size(434, 22);
-            this.txtFechaInicioFVP.TabIndex = 2;
+            txtFechaInicioFVP.BackColor = System.Drawing.Color.FromArgb(64, 63, 62);
+            txtFechaInicioFVP.ForeColor = System.Drawing.SystemColors.Control;
+            txtFechaInicioFVP.Location = new System.Drawing.Point(0, 38);
+            txtFechaInicioFVP.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            txtFechaInicioFVP.Name = "txtFechaInicioFVP";
+            txtFechaInicioFVP.Size = new System.Drawing.Size(434, 27);
+            txtFechaInicioFVP.TabIndex = 2;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label4.Location = new System.Drawing.Point(3, 6);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(127, 20);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Fecha de Inicio:";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            label4.AutoSize = true;
+            label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            label4.Location = new System.Drawing.Point(3, 8);
+            label4.Name = "label4";
+            label4.Size = new System.Drawing.Size(127, 20);
+            label4.TabIndex = 3;
+            label4.Text = "Fecha de Inicio:";
+            label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.txtCostoTotalFVP);
-            this.panel7.Controls.Add(this.label5);
-            this.panel7.Location = new System.Drawing.Point(0, 341);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(434, 56);
-            this.panel7.TabIndex = 5;
+            panel7.Controls.Add(txtCostoTotalFVP);
+            panel7.Controls.Add(label5);
+            panel7.Location = new System.Drawing.Point(0, 426);
+            panel7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            panel7.Name = "panel7";
+            panel7.Size = new System.Drawing.Size(434, 70);
+            panel7.TabIndex = 5;
             // 
             // txtCostoTotalFVP
             // 
-            this.txtCostoTotalFVP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(63)))), ((int)(((byte)(62)))));
-            this.txtCostoTotalFVP.ForeColor = System.Drawing.SystemColors.Control;
-            this.txtCostoTotalFVP.Location = new System.Drawing.Point(0, 30);
-            this.txtCostoTotalFVP.Name = "txtCostoTotalFVP";
-            this.txtCostoTotalFVP.Size = new System.Drawing.Size(434, 22);
-            this.txtCostoTotalFVP.TabIndex = 2;
+            txtCostoTotalFVP.BackColor = System.Drawing.Color.FromArgb(64, 63, 62);
+            txtCostoTotalFVP.ForeColor = System.Drawing.SystemColors.Control;
+            txtCostoTotalFVP.Location = new System.Drawing.Point(0, 38);
+            txtCostoTotalFVP.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            txtCostoTotalFVP.Name = "txtCostoTotalFVP";
+            txtCostoTotalFVP.Size = new System.Drawing.Size(434, 27);
+            txtCostoTotalFVP.TabIndex = 2;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label5.Location = new System.Drawing.Point(3, 4);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(100, 20);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "Costo Total:";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            label5.AutoSize = true;
+            label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            label5.Location = new System.Drawing.Point(3, 5);
+            label5.Name = "label5";
+            label5.Size = new System.Drawing.Size(100, 20);
+            label5.TabIndex = 3;
+            label5.Text = "Costo Total:";
+            label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.comboBoxEstadoPagoFVP);
-            this.panel5.Controls.Add(this.label3);
-            this.panel5.Location = new System.Drawing.Point(0, 173);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(434, 56);
-            this.panel5.TabIndex = 5;
+            panel5.Controls.Add(comboBoxEstadoPagoFVP);
+            panel5.Controls.Add(label3);
+            panel5.Location = new System.Drawing.Point(0, 216);
+            panel5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            panel5.Name = "panel5";
+            panel5.Size = new System.Drawing.Size(434, 70);
+            panel5.TabIndex = 5;
             // 
             // comboBoxEstadoPagoFVP
             // 
-            this.comboBoxEstadoPagoFVP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(63)))), ((int)(((byte)(62)))));
-            this.comboBoxEstadoPagoFVP.ForeColor = System.Drawing.Color.White;
-            this.comboBoxEstadoPagoFVP.FormattingEnabled = true;
-            this.comboBoxEstadoPagoFVP.Items.AddRange(new object[] {
-            "Pagado",
-            "Sin Pagar",
-            "Señado"});
-            this.comboBoxEstadoPagoFVP.Location = new System.Drawing.Point(0, 32);
-            this.comboBoxEstadoPagoFVP.Name = "comboBoxEstadoPagoFVP";
-            this.comboBoxEstadoPagoFVP.Size = new System.Drawing.Size(434, 24);
-            this.comboBoxEstadoPagoFVP.TabIndex = 7;
+            comboBoxEstadoPagoFVP.BackColor = System.Drawing.Color.FromArgb(64, 63, 62);
+            comboBoxEstadoPagoFVP.ForeColor = System.Drawing.Color.White;
+            comboBoxEstadoPagoFVP.FormattingEnabled = true;
+            comboBoxEstadoPagoFVP.Items.AddRange(new object[] { "Pagado", "Sin Pagar", "Señado" });
+            comboBoxEstadoPagoFVP.Location = new System.Drawing.Point(0, 40);
+            comboBoxEstadoPagoFVP.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            comboBoxEstadoPagoFVP.Name = "comboBoxEstadoPagoFVP";
+            comboBoxEstadoPagoFVP.Size = new System.Drawing.Size(434, 28);
+            comboBoxEstadoPagoFVP.TabIndex = 7;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label3.Location = new System.Drawing.Point(3, 6);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(132, 20);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Estado de Pago:";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            label3.AutoSize = true;
+            label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            label3.Location = new System.Drawing.Point(3, 8);
+            label3.Name = "label3";
+            label3.Size = new System.Drawing.Size(132, 20);
+            label3.TabIndex = 3;
+            label3.Text = "Estado de Pago:";
+            label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.comboTipoServicioFVP);
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Location = new System.Drawing.Point(0, 56);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(434, 56);
-            this.panel3.TabIndex = 5;
+            panel3.Controls.Add(comboTipoServicioFVP);
+            panel3.Controls.Add(label1);
+            panel3.Location = new System.Drawing.Point(0, 70);
+            panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            panel3.Name = "panel3";
+            panel3.Size = new System.Drawing.Size(434, 70);
+            panel3.TabIndex = 5;
             // 
             // comboTipoServicioFVP
             // 
-            this.comboTipoServicioFVP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(63)))), ((int)(((byte)(62)))));
-            this.comboTipoServicioFVP.ForeColor = System.Drawing.Color.White;
-            this.comboTipoServicioFVP.FormattingEnabled = true;
-            this.comboTipoServicioFVP.Items.AddRange(new object[] {
-            "Grabación, Mezcla y Mastering",
-            "Beat Pezonalizado",
-            "VideoClip",
-            "OneShot",
-            "Portada"});
-            this.comboTipoServicioFVP.Location = new System.Drawing.Point(0, 32);
-            this.comboTipoServicioFVP.Name = "comboTipoServicioFVP";
-            this.comboTipoServicioFVP.Size = new System.Drawing.Size(434, 24);
-            this.comboTipoServicioFVP.TabIndex = 6;
+            comboTipoServicioFVP.BackColor = System.Drawing.Color.FromArgb(64, 63, 62);
+            comboTipoServicioFVP.ForeColor = System.Drawing.Color.White;
+            comboTipoServicioFVP.FormattingEnabled = true;
+            comboTipoServicioFVP.Items.AddRange(new object[] { "Grabación, Mezcla y Mastering", "Beat Pezonalizado", "VideoClip", "OneShot", "Portada" });
+            comboTipoServicioFVP.Location = new System.Drawing.Point(0, 40);
+            comboTipoServicioFVP.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            comboTipoServicioFVP.Name = "comboTipoServicioFVP";
+            comboTipoServicioFVP.Size = new System.Drawing.Size(434, 28);
+            comboTipoServicioFVP.TabIndex = 6;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label1.Location = new System.Drawing.Point(3, 6);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(134, 20);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Tipo de Servicio:";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            label1.AutoSize = true;
+            label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            label1.Location = new System.Drawing.Point(3, 8);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(134, 20);
+            label1.TabIndex = 3;
+            label1.Text = "Tipo de Servicio:";
+            label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.label2);
-            this.panel4.Controls.Add(this.txtNombreClienteFVP);
-            this.panel4.Location = new System.Drawing.Point(0, 118);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(434, 56);
-            this.panel4.TabIndex = 5;
+            panel4.Controls.Add(label2);
+            panel4.Controls.Add(txtNombreClienteFVP);
+            panel4.Location = new System.Drawing.Point(0, 148);
+            panel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            panel4.Name = "panel4";
+            panel4.Size = new System.Drawing.Size(434, 70);
+            panel4.TabIndex = 5;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label2.Location = new System.Drawing.Point(3, 7);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(157, 20);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Nombre del Cliente:";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            label2.AutoSize = true;
+            label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            label2.Location = new System.Drawing.Point(3, 9);
+            label2.Name = "label2";
+            label2.Size = new System.Drawing.Size(157, 20);
+            label2.TabIndex = 7;
+            label2.Text = "Nombre del Cliente:";
+            label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // txtNombreClienteFVP
             // 
-            this.txtNombreClienteFVP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(63)))), ((int)(((byte)(62)))));
-            this.txtNombreClienteFVP.ForeColor = System.Drawing.SystemColors.Control;
-            this.txtNombreClienteFVP.Location = new System.Drawing.Point(0, 30);
-            this.txtNombreClienteFVP.Name = "txtNombreClienteFVP";
-            this.txtNombreClienteFVP.Size = new System.Drawing.Size(434, 22);
-            this.txtNombreClienteFVP.TabIndex = 2;
+            txtNombreClienteFVP.BackColor = System.Drawing.Color.FromArgb(64, 63, 62);
+            txtNombreClienteFVP.ForeColor = System.Drawing.SystemColors.Control;
+            txtNombreClienteFVP.Location = new System.Drawing.Point(0, 38);
+            txtNombreClienteFVP.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            txtNombreClienteFVP.Name = "txtNombreClienteFVP";
+            txtNombreClienteFVP.Size = new System.Drawing.Size(434, 27);
+            txtNombreClienteFVP.TabIndex = 2;
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.txtNombreProyectoFVP);
-            this.panel2.Controls.Add(this.lblNombreProyecto);
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(434, 56);
-            this.panel2.TabIndex = 4;
+            panel2.Controls.Add(txtNombreProyectoFVP);
+            panel2.Controls.Add(lblNombreProyecto);
+            panel2.Location = new System.Drawing.Point(0, 0);
+            panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            panel2.Name = "panel2";
+            panel2.Size = new System.Drawing.Size(434, 70);
+            panel2.TabIndex = 4;
             // 
             // txtNombreProyectoFVP
             // 
-            this.txtNombreProyectoFVP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(63)))), ((int)(((byte)(62)))));
-            this.txtNombreProyectoFVP.ForeColor = System.Drawing.SystemColors.Control;
-            this.txtNombreProyectoFVP.Location = new System.Drawing.Point(0, 30);
-            this.txtNombreProyectoFVP.Name = "txtNombreProyectoFVP";
-            this.txtNombreProyectoFVP.Size = new System.Drawing.Size(434, 22);
-            this.txtNombreProyectoFVP.TabIndex = 2;
+            txtNombreProyectoFVP.BackColor = System.Drawing.Color.FromArgb(64, 63, 62);
+            txtNombreProyectoFVP.ForeColor = System.Drawing.SystemColors.Control;
+            txtNombreProyectoFVP.Location = new System.Drawing.Point(0, 38);
+            txtNombreProyectoFVP.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            txtNombreProyectoFVP.Name = "txtNombreProyectoFVP";
+            txtNombreProyectoFVP.Size = new System.Drawing.Size(434, 27);
+            txtNombreProyectoFVP.TabIndex = 2;
             // 
             // lblNombreProyecto
             // 
-            this.lblNombreProyecto.AutoSize = true;
-            this.lblNombreProyecto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lblNombreProyecto.Location = new System.Drawing.Point(3, 4);
-            this.lblNombreProyecto.Name = "lblNombreProyecto";
-            this.lblNombreProyecto.Size = new System.Drawing.Size(171, 20);
-            this.lblNombreProyecto.TabIndex = 3;
-            this.lblNombreProyecto.Text = "Nombre del Proyecto:";
-            this.lblNombreProyecto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            lblNombreProyecto.AutoSize = true;
+            lblNombreProyecto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            lblNombreProyecto.Location = new System.Drawing.Point(3, 5);
+            lblNombreProyecto.Name = "lblNombreProyecto";
+            lblNombreProyecto.Size = new System.Drawing.Size(171, 20);
+            lblNombreProyecto.TabIndex = 3;
+            lblNombreProyecto.Text = "Nombre del Proyecto:";
+            lblNombreProyecto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // pictureBoxSearchFVP
             // 
-            this.pictureBoxSearchFVP.Image = global::ProyectoCRUD.Properties.Resources.search__2_;
-            this.pictureBoxSearchFVP.Location = new System.Drawing.Point(639, 23);
-            this.pictureBoxSearchFVP.Name = "pictureBoxSearchFVP";
-            this.pictureBoxSearchFVP.Size = new System.Drawing.Size(16, 16);
-            this.pictureBoxSearchFVP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBoxSearchFVP.TabIndex = 3;
-            this.pictureBoxSearchFVP.TabStop = false;
-            this.pictureBoxSearchFVP.Click += new System.EventHandler(this.pictureBox1_Click);
+            pictureBoxSearchFVP.Image = Properties.Resources.search__2_;
+            pictureBoxSearchFVP.Location = new System.Drawing.Point(639, 29);
+            pictureBoxSearchFVP.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            pictureBoxSearchFVP.Name = "pictureBoxSearchFVP";
+            pictureBoxSearchFVP.Size = new System.Drawing.Size(16, 16);
+            pictureBoxSearchFVP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            pictureBoxSearchFVP.TabIndex = 3;
+            pictureBoxSearchFVP.TabStop = false;
+            pictureBoxSearchFVP.Click += pictureBox1_Click;
             // 
             // FormVerProyectos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(74)))), ((int)(((byte)(74)))));
-            this.ClientSize = new System.Drawing.Size(1000, 815);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.pictureBoxSearchFVP);
-            this.Controls.Add(this.txtBuscarProyectoFVP);
-            this.Controls.Add(this.labelTitulo);
-            this.Controls.Add(this.dGVProyectosFVP);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FormVerProyectos";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormVerProyectos";
-            this.Load += new System.EventHandler(this.FormVerProyectos_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dGVProyectosFVP)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.panel10.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearchFVP)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            BackColor = System.Drawing.Color.FromArgb(74, 74, 74);
+            ClientSize = new System.Drawing.Size(1000, 1019);
+            Controls.Add(groupBox1);
+            Controls.Add(pictureBoxSearchFVP);
+            Controls.Add(txtBuscarProyectoFVP);
+            Controls.Add(labelTitulo);
+            Controls.Add(dGVProyectosFVP);
+            FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            Name = "FormVerProyectos";
+            StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            Text = "FormVerProyectos";
+            Load += FormVerProyectos_Load;
+            ((System.ComponentModel.ISupportInitialize)dGVProyectosFVP).EndInit();
+            groupBox1.ResumeLayout(false);
+            panel10.ResumeLayout(false);
+            panel1.ResumeLayout(false);
+            panel9.ResumeLayout(false);
+            panel9.PerformLayout();
+            panel8.ResumeLayout(false);
+            panel8.PerformLayout();
+            panel6.ResumeLayout(false);
+            panel6.PerformLayout();
+            panel7.ResumeLayout(false);
+            panel7.PerformLayout();
+            panel5.ResumeLayout(false);
+            panel5.PerformLayout();
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
+            panel4.ResumeLayout(false);
+            panel4.PerformLayout();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxSearchFVP).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

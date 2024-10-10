@@ -102,9 +102,11 @@
             txtTelefonoFCC.ForeColor = System.Drawing.SystemColors.Control;
             txtTelefonoFCC.Location = new System.Drawing.Point(0, 42);
             txtTelefonoFCC.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            txtTelefonoFCC.MaxLength = 10;
             txtTelefonoFCC.Name = "txtTelefonoFCC";
             txtTelefonoFCC.Size = new System.Drawing.Size(434, 27);
             txtTelefonoFCC.TabIndex = 4;
+            txtTelefonoFCC.KeyPress += txtTelefonoFCC_KeyPress;
             // 
             // label3
             // 
@@ -133,6 +135,7 @@
             txtRedesSocialesFCC.ForeColor = System.Drawing.SystemColors.Control;
             txtRedesSocialesFCC.Location = new System.Drawing.Point(0, 38);
             txtRedesSocialesFCC.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            txtRedesSocialesFCC.MaxLength = 30;
             txtRedesSocialesFCC.Name = "txtRedesSocialesFCC";
             txtRedesSocialesFCC.Size = new System.Drawing.Size(434, 27);
             txtRedesSocialesFCC.TabIndex = 2;
@@ -164,9 +167,11 @@
             txtApellidoFCC.ForeColor = System.Drawing.SystemColors.Control;
             txtApellidoFCC.Location = new System.Drawing.Point(0, 42);
             txtApellidoFCC.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            txtApellidoFCC.MaxLength = 20;
             txtApellidoFCC.Name = "txtApellidoFCC";
             txtApellidoFCC.Size = new System.Drawing.Size(434, 27);
             txtApellidoFCC.TabIndex = 8;
+            txtApellidoFCC.KeyPress += txtApellidoFCC_KeyPress;
             // 
             // label1
             // 
@@ -206,6 +211,7 @@
             txtNombreArtisticoFCC.ForeColor = System.Drawing.SystemColors.Control;
             txtNombreArtisticoFCC.Location = new System.Drawing.Point(0, 38);
             txtNombreArtisticoFCC.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            txtNombreArtisticoFCC.MaxLength = 15;
             txtNombreArtisticoFCC.Name = "txtNombreArtisticoFCC";
             txtNombreArtisticoFCC.Size = new System.Drawing.Size(434, 27);
             txtNombreArtisticoFCC.TabIndex = 2;
@@ -226,9 +232,11 @@
             txtNombreClienteFCC.ForeColor = System.Drawing.SystemColors.Control;
             txtNombreClienteFCC.Location = new System.Drawing.Point(0, 38);
             txtNombreClienteFCC.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            txtNombreClienteFCC.MaxLength = 20;
             txtNombreClienteFCC.Name = "txtNombreClienteFCC";
             txtNombreClienteFCC.Size = new System.Drawing.Size(434, 27);
             txtNombreClienteFCC.TabIndex = 2;
+            txtNombreClienteFCC.KeyPress += txtNombreClienteFCC_KeyPress;
             // 
             // lblNombreProyecto
             // 
