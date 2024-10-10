@@ -1,4 +1,5 @@
-﻿using System;
+﻿using C2_CN;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace ProyectoCRUD
 {
     public partial class formCrearProyecto : Form
     {
+        ProyectoNegocio _proyectoNegocio = new ProyectoNegocio();
         public formCrearProyecto()
         {
             InitializeComponent();
@@ -47,9 +49,9 @@ namespace ProyectoCRUD
 
         }
 
-        private void btnAgregarProyecto_Click(object sender, EventArgs e)
+        private async void btnAgregarProyecto_Click(object sender, EventArgs e)
         {
-
+            bool state = await _proyectoNegocio.CrearProyecto(txtNombreProyectoFCP.Text, float.Parse(txtCostoProyectoFCP.Text), checkBoxDescuentoFCP.Checked, comboBox2.Text, txtInicioProyectoFCP.Text, txtCierreProyectoFCP.Text);
         }
 
         private void label7_Click(object sender, EventArgs e)

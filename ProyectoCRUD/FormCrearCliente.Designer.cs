@@ -240,6 +240,7 @@
             this.btnAgregarDatosCliente.TabIndex = 1;
             this.btnAgregarDatosCliente.Text = "Agregar Datos";
             this.btnAgregarDatosCliente.UseVisualStyleBackColor = false;
+            this.btnAgregarDatosCliente.Click += new System.EventHandler(this.btnAgregarDatosCliente_Click);
             // 
             // btnBorrarDatosCliente
             // 

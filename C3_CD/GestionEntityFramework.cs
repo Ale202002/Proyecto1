@@ -10,118 +10,134 @@ using System.Threading.Tasks;
 
 namespace C3_CD
 {
-    public class GestionEntityFramework
+    public class GestionEntityFramework<T> where T : class
     {
-        ContextCrud context;
-        public GestionEntityFramework()
-        {
-            InitializeConection();
-            CreateDatabase();
-        }
+        private readonly ContextCrud context;
 
-        public void InitializeConection()
+        public GestionEntityFramework()
         {
             var optionsBuilder = new DbContextOptionsBuilder<ContextCrud>();
             optionsBuilder.UseSqlServer("Server=ACER-NITRO-5;Database=Estudio;Integrated Security=true;Encrypt=True;TrustServerCertificate=True;");
             context = new ContextCrud(optionsBuilder.Options);
         }
 
-        public void CreateDatabase()
+        public async Task<List<T>> GetAsync()
         {
-            context.Database.EnsureCreated();
+            Dispose();
+            return await context.Set<T>().ToListAsync();
         }
 
-        public List<object> BuscarPorColumna(Type tipoEntidad, string nombreColumna, object valorBuscado)
+        public async Task<List<T>> GetAsync(Expression<Func<T, bool>> whereCondition = null)
         {
-            MethodInfo dbSetMethod = typeof(DbContext).GetMethod("Set", new Type[] { });
-            MethodInfo dbSetGenericMethod = dbSetMethod.MakeGenericMethod(tipoEntidad);
-            object dbSet = dbSetGenericMethod.Invoke(this, null);
-
-            ParameterExpression parameter = Expression.Parameter(tipoEntidad, "e");
-            MemberExpression property = Expression.Property(parameter, nombreColumna);
-            ConstantExpression constant = Expression.Constant(valorBuscado);
-            BinaryExpression equals = Expression.Equal(property, constant);
-            LambdaExpression lambda = Expression.Lambda(equals, parameter);
-
-            //var lambda = Expression.Lambda(Expression.Equal(Expression.Property(Expression.Parameter(tipoEntidad, "e"), nombreColumna),Expression.Constant(valorBuscado)),Expression.Parameter(tipoEntidad, "e"));
-
-            object queryable = (IQueryable)dbSet;
-
-            MethodInfo whereMethod = typeof(Queryable).GetMethods()
-                .First(m => m.Name == "Where" && m.GetParameters().Length == 2)
-                .MakeGenericMethod(tipoEntidad);
-
-            object filtered = whereMethod.Invoke(null, new object[] { queryable, lambda });
-
-            MethodInfo toListMethod = typeof(Enumerable)
-                .GetMethods()
-                .First(m => m.Name == "ToList" && m.GetParameters().Length == 1)
-                .MakeGenericMethod(tipoEntidad);
-            IEnumerable filteredEnumerable = filtered as IEnumerable;
-
-            object results = toListMethod.Invoke(null, new object[] { filteredEnumerable });
-            List<object> objectList = new List<object>();
-            foreach (var item in (IEnumerable)results)
+            IQueryable<T> query = context.Set<T>();
+            if (whereCondition != null)
             {
-                objectList.Add(item);
+                query = query.Where(whereCondition);
             }
-            return objectList;
+            Dispose();
+            return await query.ToListAsync();
         }
 
-        public List<object> ListarTodos(Type tipoEntidad)
+        public async Task<bool> CreateAsync(T entity)
         {
-
-            MethodInfo dbSetMethod = typeof(DbContext).GetMethod("Set", Type.EmptyTypes);
-            MethodInfo dbSetGenericMethod = dbSetMethod.MakeGenericMethod(tipoEntidad);
-            object dbSet = dbSetGenericMethod.Invoke(this, null);
-            MethodInfo toListMethod = typeof(Enumerable)
-                .GetMethods()
-                .First(m => m.Name == "ToList" && m.GetParameters().Length == 1)
-                .MakeGenericMethod(tipoEntidad);
-            IEnumerable dbSetEnumerable = dbSet as IEnumerable;
-            object results = toListMethod.Invoke(null, new object[] { dbSetEnumerable });
-            List<object> objectList = new List<object>();
-            foreach (var item in (IEnumerable)results)
+            try
             {
-                objectList.Add(item);
+                PropertyInfo propertyId = entity.GetType().GetProperty("Id");
+                PropertyInfo propertyDate = entity.GetType().GetProperty("FechaRegistro");
+                if (propertyDate != null && propertyDate.CanWrite && propertyDate.PropertyType != typeof(DateTime))
+                {
+                    propertyDate.SetValue(entity, DateTime.Now);
+                    await context.Set<T>().AddAsync(entity);
+                    Commit();
+                    return true;
+                }
+                else if(propertyId != null)
+                {
+                    await context.Set<T>().AddAsync(entity);
+                    Commit();
+                    return true;
+                }
+                else
+                {
+                    Dispose();
+                    return false;
+                }
             }
-            return objectList;
+            catch (Exception)
+            {
+                return false;
+                throw;
+            }
         }
 
-        public void ActualizarEntidad(Type tipoEntidad, object entidadActualizar)
+        public async Task<bool> DeleteByIdAsync(int id)
         {
-            object[] arrayId = new object[1];
-            MethodInfo dbSetMethod = typeof(DbContext).GetMethod("Set", Type.EmptyTypes);
-            MethodInfo dbSetGenericMethod = dbSetMethod.MakeGenericMethod(tipoEntidad);
-            object dbSet = dbSetGenericMethod.Invoke(this, null);
-            PropertyInfo idProp = tipoEntidad.GetProperty("Id");
-            arrayId[0] = (int)idProp.GetValue(entidadActualizar);
-            var entidadExistente = dbSet.GetType().GetMethod("Find").Invoke(dbSet, new object[] { arrayId });
-            context.Entry(entidadExistente).CurrentValues.SetValues(entidadActualizar);
+            try
+            {
+                T entity = await GetByIdAsync(id);
+                if (entity != null)
+                {
+                    context.Set<T>().Remove(entity);
+                    Commit();
+                    return true;
+                }
+                else
+                {
+                    Dispose();
+                    return false;
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        public async Task<bool> UpdateByIdAsync(int id, T entity)
+        {
+            try
+            {
+                T existingEntity = await GetByIdAsync(id);
+                if (existingEntity != null)
+                {
+                    PropertyInfo[] properties = typeof(T).GetProperties(BindingFlags.Public | BindingFlags.Instance);
+                    foreach (var property in properties)
+                    {
+                        var newValue = property.GetValue(entity);
+                        if (newValue != null && property.Name != "Id" && property.Name != "FechaRegistro")
+                        {
+                            property.SetValue(existingEntity, newValue);
+                        }
+                    }
+                    context.Set<T>().Update(existingEntity);
+                    Commit();
+                    return true;
+                }
+                else
+                {
+                    Dispose();
+                    return false;
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        public async Task<T> GetByIdAsync(int id)
+        {
+            return await context.Set<T>().FindAsync(id);
+        }
+
+        public void Commit()
+        {
             context.SaveChanges();
         }
 
-        public void EliminarEntidad(Type tipoEntidad, object entidadEliminar)
+        public void Dispose()
         {
-            object[] arrayId = new object[1];
-            MethodInfo dbSetMethod = typeof(DbContext).GetMethod("Set", Type.EmptyTypes);
-            MethodInfo dbSetGenericMethod = dbSetMethod.MakeGenericMethod(tipoEntidad);
-            object dbSet = dbSetGenericMethod.Invoke(this, null);
-            PropertyInfo idProp = tipoEntidad.GetProperty("Id");
-            arrayId[0] = (int)idProp.GetValue(entidadEliminar);
-            var entidadExistente = dbSet.GetType().GetMethod("Find").Invoke(dbSet, new object[] { arrayId });
-            context.Remove(entidadExistente);
-            context.SaveChanges();
-        }
-
-        public void CargarEntidad(Type tipoEntidad, object entidadAgregar)
-        {
-            MethodInfo dbSetMethod = typeof(DbContext).GetMethod("Set", Type.EmptyTypes);
-            MethodInfo dbSetGenericMethod = dbSetMethod.MakeGenericMethod(tipoEntidad);
-            object dbSet = dbSetGenericMethod.Invoke(this, null);
-            MethodInfo addMethod = dbSet.GetType().GetMethod("Add");
-            addMethod.Invoke(dbSet, new object[] { entidadAgregar });
-            context.SaveChanges();
+            context.Dispose();
         }
     }
 }
