@@ -23,7 +23,6 @@ namespace C3_CD
 
         public async Task<List<T>> GetAsync()
         {
-            Dispose();
             return await context.Set<T>().ToListAsync();
         }
 
@@ -34,7 +33,6 @@ namespace C3_CD
             {
                 query = query.Where(whereCondition);
             }
-            Dispose();
             return await query.ToListAsync();
         }
 
@@ -132,9 +130,9 @@ namespace C3_CD
 
         public void Commit()
         {
-            context.SaveChanges();
         }
 
+            context.SaveChanges();
         public void Dispose()
         {
             context.Dispose();

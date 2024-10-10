@@ -28,350 +28,373 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtBuscarClienteFVC = new System.Windows.Forms.TextBox();
-            this.labelTitulo = new System.Windows.Forms.Label();
-            this.dGVFormVerClientes = new System.Windows.Forms.DataGridView();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.btnEditarFVC = new System.Windows.Forms.Button();
-            this.btnGuardarFVC = new System.Windows.Forms.Button();
-            this.btnCancelarFVC = new System.Windows.Forms.Button();
-            this.btnEliminarFVC = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.lblNombreProyecto = new System.Windows.Forms.Label();
-            this.txtNombreFVC = new System.Windows.Forms.TextBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.txtNombreArtisticoFVC = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtApellidoFVC = new System.Windows.Forms.TextBox();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtTelefonoFVC = new System.Windows.Forms.TextBox();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtRedesFVC = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.dGVFormVerClientes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.groupBox1.SuspendLayout();
-            this.panel10.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.SuspendLayout();
+            txtBuscarClienteFVC = new System.Windows.Forms.TextBox();
+            labelTitulo = new System.Windows.Forms.Label();
+            dGVFormVerClientes = new System.Windows.Forms.DataGridView();
+            pictureBox1 = new System.Windows.Forms.PictureBox();
+            groupBox1 = new System.Windows.Forms.GroupBox();
+            panel10 = new System.Windows.Forms.Panel();
+            btnEditarFVC = new System.Windows.Forms.Button();
+            btnGuardarFVC = new System.Windows.Forms.Button();
+            btnCancelarFVC = new System.Windows.Forms.Button();
+            btnEliminarFVC = new System.Windows.Forms.Button();
+            panel1 = new System.Windows.Forms.Panel();
+            panel6 = new System.Windows.Forms.Panel();
+            txtRedesFVC = new System.Windows.Forms.TextBox();
+            label4 = new System.Windows.Forms.Label();
+            panel5 = new System.Windows.Forms.Panel();
+            txtTelefonoFVC = new System.Windows.Forms.TextBox();
+            label3 = new System.Windows.Forms.Label();
+            panel3 = new System.Windows.Forms.Panel();
+            txtApellidoFVC = new System.Windows.Forms.TextBox();
+            label1 = new System.Windows.Forms.Label();
+            panel4 = new System.Windows.Forms.Panel();
+            label2 = new System.Windows.Forms.Label();
+            txtNombreArtisticoFVC = new System.Windows.Forms.TextBox();
+            panel2 = new System.Windows.Forms.Panel();
+            txtNombreFVC = new System.Windows.Forms.TextBox();
+            lblNombreProyecto = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)dGVFormVerClientes).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            groupBox1.SuspendLayout();
+            panel10.SuspendLayout();
+            panel1.SuspendLayout();
+            panel6.SuspendLayout();
+            panel5.SuspendLayout();
+            panel3.SuspendLayout();
+            panel4.SuspendLayout();
+            panel2.SuspendLayout();
+            SuspendLayout();
             // 
             // txtBuscarClienteFVC
             // 
-            this.txtBuscarClienteFVC.Location = new System.Drawing.Point(429, 13);
-            this.txtBuscarClienteFVC.Name = "txtBuscarClienteFVC";
-            this.txtBuscarClienteFVC.Size = new System.Drawing.Size(201, 22);
-            this.txtBuscarClienteFVC.TabIndex = 6;
+            txtBuscarClienteFVC.Location = new System.Drawing.Point(429, 16);
+            txtBuscarClienteFVC.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            txtBuscarClienteFVC.Name = "txtBuscarClienteFVC";
+            txtBuscarClienteFVC.Size = new System.Drawing.Size(201, 27);
+            txtBuscarClienteFVC.TabIndex = 6;
             // 
             // labelTitulo
             // 
-            this.labelTitulo.AutoSize = true;
-            this.labelTitulo.Font = new System.Drawing.Font("Constantia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTitulo.ForeColor = System.Drawing.Color.White;
-            this.labelTitulo.Location = new System.Drawing.Point(284, 14);
-            this.labelTitulo.Name = "labelTitulo";
-            this.labelTitulo.Size = new System.Drawing.Size(116, 21);
-            this.labelTitulo.TabIndex = 5;
-            this.labelTitulo.Text = "Buscar Cliente";
+            labelTitulo.AutoSize = true;
+            labelTitulo.Font = new System.Drawing.Font("Constantia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            labelTitulo.ForeColor = System.Drawing.Color.White;
+            labelTitulo.Location = new System.Drawing.Point(284, 18);
+            labelTitulo.Name = "labelTitulo";
+            labelTitulo.Size = new System.Drawing.Size(116, 21);
+            labelTitulo.TabIndex = 5;
+            labelTitulo.Text = "Buscar Cliente";
             // 
             // dGVFormVerClientes
             // 
-            this.dGVFormVerClientes.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(63)))), ((int)(((byte)(62)))));
-            this.dGVFormVerClientes.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dGVFormVerClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dGVFormVerClientes.Location = new System.Drawing.Point(12, 48);
-            this.dGVFormVerClientes.Name = "dGVFormVerClientes";
-            this.dGVFormVerClientes.RowHeadersWidth = 51;
-            this.dGVFormVerClientes.RowTemplate.Height = 24;
-            this.dGVFormVerClientes.Size = new System.Drawing.Size(976, 248);
-            this.dGVFormVerClientes.TabIndex = 4;
+            dGVFormVerClientes.BackgroundColor = System.Drawing.Color.FromArgb(64, 63, 62);
+            dGVFormVerClientes.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            dGVFormVerClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dGVFormVerClientes.Location = new System.Drawing.Point(12, 60);
+            dGVFormVerClientes.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            dGVFormVerClientes.Name = "dGVFormVerClientes";
+            dGVFormVerClientes.RowHeadersWidth = 51;
+            dGVFormVerClientes.RowTemplate.Height = 24;
+            dGVFormVerClientes.Size = new System.Drawing.Size(976, 310);
+            dGVFormVerClientes.TabIndex = 4;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::ProyectoCRUD.Properties.Resources.search__2_;
-            this.pictureBox1.Location = new System.Drawing.Point(639, 16);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(16, 16);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.Image = Properties.Resources.search__2_;
+            pictureBox1.Location = new System.Drawing.Point(639, 20);
+            pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new System.Drawing.Size(16, 16);
+            pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            pictureBox1.TabIndex = 7;
+            pictureBox1.TabStop = false;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.panel10);
-            this.groupBox1.Controls.Add(this.panel1);
-            this.groupBox1.ForeColor = System.Drawing.SystemColors.Control;
-            this.groupBox1.Location = new System.Drawing.Point(12, 309);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(976, 494);
-            this.groupBox1.TabIndex = 8;
-            this.groupBox1.TabStop = false;
+            groupBox1.Controls.Add(panel10);
+            groupBox1.Controls.Add(panel1);
+            groupBox1.ForeColor = System.Drawing.SystemColors.Control;
+            groupBox1.Location = new System.Drawing.Point(12, 386);
+            groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            groupBox1.Size = new System.Drawing.Size(976, 618);
+            groupBox1.TabIndex = 8;
+            groupBox1.TabStop = false;
             // 
             // panel10
             // 
-            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(63)))), ((int)(((byte)(62)))));
-            this.panel10.Controls.Add(this.btnEditarFVC);
-            this.panel10.Controls.Add(this.btnGuardarFVC);
-            this.panel10.Controls.Add(this.btnCancelarFVC);
-            this.panel10.Controls.Add(this.btnEliminarFVC);
-            this.panel10.Location = new System.Drawing.Point(627, 113);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(233, 291);
-            this.panel10.TabIndex = 7;
+            panel10.BackColor = System.Drawing.Color.FromArgb(64, 63, 62);
+            panel10.Controls.Add(btnEditarFVC);
+            panel10.Controls.Add(btnGuardarFVC);
+            panel10.Controls.Add(btnCancelarFVC);
+            panel10.Controls.Add(btnEliminarFVC);
+            panel10.Location = new System.Drawing.Point(627, 141);
+            panel10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            panel10.Name = "panel10";
+            panel10.Size = new System.Drawing.Size(233, 364);
+            panel10.TabIndex = 7;
             // 
             // btnEditarFVC
             // 
-            this.btnEditarFVC.BackColor = System.Drawing.Color.DimGray;
-            this.btnEditarFVC.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEditarFVC.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnEditarFVC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditarFVC.Location = new System.Drawing.Point(29, 26);
-            this.btnEditarFVC.Name = "btnEditarFVC";
-            this.btnEditarFVC.Size = new System.Drawing.Size(175, 45);
-            this.btnEditarFVC.TabIndex = 6;
-            this.btnEditarFVC.Text = "Editar";
-            this.btnEditarFVC.UseVisualStyleBackColor = false;
+            btnEditarFVC.BackColor = System.Drawing.Color.DimGray;
+            btnEditarFVC.Cursor = System.Windows.Forms.Cursors.Hand;
+            btnEditarFVC.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            btnEditarFVC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            btnEditarFVC.Location = new System.Drawing.Point(29, 32);
+            btnEditarFVC.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            btnEditarFVC.Name = "btnEditarFVC";
+            btnEditarFVC.Size = new System.Drawing.Size(175, 56);
+            btnEditarFVC.TabIndex = 6;
+            btnEditarFVC.Text = "Editar";
+            btnEditarFVC.UseVisualStyleBackColor = false;
             // 
             // btnGuardarFVC
             // 
-            this.btnGuardarFVC.BackColor = System.Drawing.Color.DimGray;
-            this.btnGuardarFVC.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnGuardarFVC.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnGuardarFVC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardarFVC.Location = new System.Drawing.Point(29, 163);
-            this.btnGuardarFVC.Name = "btnGuardarFVC";
-            this.btnGuardarFVC.Size = new System.Drawing.Size(175, 45);
-            this.btnGuardarFVC.TabIndex = 5;
-            this.btnGuardarFVC.Text = "Guardar";
-            this.btnGuardarFVC.UseVisualStyleBackColor = false;
+            btnGuardarFVC.BackColor = System.Drawing.Color.DimGray;
+            btnGuardarFVC.Cursor = System.Windows.Forms.Cursors.Hand;
+            btnGuardarFVC.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            btnGuardarFVC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            btnGuardarFVC.Location = new System.Drawing.Point(29, 204);
+            btnGuardarFVC.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            btnGuardarFVC.Name = "btnGuardarFVC";
+            btnGuardarFVC.Size = new System.Drawing.Size(175, 56);
+            btnGuardarFVC.TabIndex = 5;
+            btnGuardarFVC.Text = "Guardar";
+            btnGuardarFVC.UseVisualStyleBackColor = false;
             // 
             // btnCancelarFVC
             // 
-            this.btnCancelarFVC.BackColor = System.Drawing.Color.DimGray;
-            this.btnCancelarFVC.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCancelarFVC.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCancelarFVC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelarFVC.Location = new System.Drawing.Point(29, 229);
-            this.btnCancelarFVC.Name = "btnCancelarFVC";
-            this.btnCancelarFVC.Size = new System.Drawing.Size(175, 45);
-            this.btnCancelarFVC.TabIndex = 0;
-            this.btnCancelarFVC.Text = "Cancelar";
-            this.btnCancelarFVC.UseVisualStyleBackColor = false;
+            btnCancelarFVC.BackColor = System.Drawing.Color.DimGray;
+            btnCancelarFVC.Cursor = System.Windows.Forms.Cursors.Hand;
+            btnCancelarFVC.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            btnCancelarFVC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            btnCancelarFVC.Location = new System.Drawing.Point(29, 286);
+            btnCancelarFVC.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            btnCancelarFVC.Name = "btnCancelarFVC";
+            btnCancelarFVC.Size = new System.Drawing.Size(175, 56);
+            btnCancelarFVC.TabIndex = 0;
+            btnCancelarFVC.Text = "Cancelar";
+            btnCancelarFVC.UseVisualStyleBackColor = false;
             // 
             // btnEliminarFVC
             // 
-            this.btnEliminarFVC.BackColor = System.Drawing.Color.DimGray;
-            this.btnEliminarFVC.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEliminarFVC.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnEliminarFVC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminarFVC.Location = new System.Drawing.Point(29, 96);
-            this.btnEliminarFVC.Name = "btnEliminarFVC";
-            this.btnEliminarFVC.Size = new System.Drawing.Size(175, 45);
-            this.btnEliminarFVC.TabIndex = 1;
-            this.btnEliminarFVC.Text = "Eliminar";
-            this.btnEliminarFVC.UseVisualStyleBackColor = false;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.txtNombreFVC);
-            this.panel2.Controls.Add(this.lblNombreProyecto);
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(434, 56);
-            this.panel2.TabIndex = 4;
-            // 
-            // lblNombreProyecto
-            // 
-            this.lblNombreProyecto.AutoSize = true;
-            this.lblNombreProyecto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lblNombreProyecto.Location = new System.Drawing.Point(3, 4);
-            this.lblNombreProyecto.Name = "lblNombreProyecto";
-            this.lblNombreProyecto.Size = new System.Drawing.Size(73, 20);
-            this.lblNombreProyecto.TabIndex = 3;
-            this.lblNombreProyecto.Text = "Nombre:";
-            this.lblNombreProyecto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblNombreProyecto.Click += new System.EventHandler(this.lblNombreProyecto_Click);
-            // 
-            // txtNombreFVC
-            // 
-            this.txtNombreFVC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(63)))), ((int)(((byte)(62)))));
-            this.txtNombreFVC.ForeColor = System.Drawing.SystemColors.Control;
-            this.txtNombreFVC.Location = new System.Drawing.Point(0, 30);
-            this.txtNombreFVC.Name = "txtNombreFVC";
-            this.txtNombreFVC.Size = new System.Drawing.Size(434, 22);
-            this.txtNombreFVC.TabIndex = 2;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.label2);
-            this.panel4.Controls.Add(this.txtNombreArtisticoFVC);
-            this.panel4.Location = new System.Drawing.Point(0, 118);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(434, 56);
-            this.panel4.TabIndex = 5;
-            // 
-            // txtNombreArtisticoFVC
-            // 
-            this.txtNombreArtisticoFVC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(63)))), ((int)(((byte)(62)))));
-            this.txtNombreArtisticoFVC.ForeColor = System.Drawing.SystemColors.Control;
-            this.txtNombreArtisticoFVC.Location = new System.Drawing.Point(0, 30);
-            this.txtNombreArtisticoFVC.Name = "txtNombreArtisticoFVC";
-            this.txtNombreArtisticoFVC.Size = new System.Drawing.Size(434, 22);
-            this.txtNombreArtisticoFVC.TabIndex = 2;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label2.Location = new System.Drawing.Point(3, 7);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(140, 20);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Nombre Artistico:";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.txtApellidoFVC);
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Location = new System.Drawing.Point(0, 56);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(434, 56);
-            this.panel3.TabIndex = 5;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label1.Location = new System.Drawing.Point(3, 6);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 20);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Apellido:";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // txtApellidoFVC
-            // 
-            this.txtApellidoFVC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(63)))), ((int)(((byte)(62)))));
-            this.txtApellidoFVC.ForeColor = System.Drawing.SystemColors.Control;
-            this.txtApellidoFVC.Location = new System.Drawing.Point(0, 30);
-            this.txtApellidoFVC.Name = "txtApellidoFVC";
-            this.txtApellidoFVC.Size = new System.Drawing.Size(434, 22);
-            this.txtApellidoFVC.TabIndex = 8;
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.txtTelefonoFVC);
-            this.panel5.Controls.Add(this.label3);
-            this.panel5.Location = new System.Drawing.Point(0, 173);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(434, 56);
-            this.panel5.TabIndex = 5;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label3.Location = new System.Drawing.Point(3, 6);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(78, 20);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Teléfono:";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // txtTelefonoFVC
-            // 
-            this.txtTelefonoFVC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(63)))), ((int)(((byte)(62)))));
-            this.txtTelefonoFVC.ForeColor = System.Drawing.SystemColors.Control;
-            this.txtTelefonoFVC.Location = new System.Drawing.Point(0, 33);
-            this.txtTelefonoFVC.Name = "txtTelefonoFVC";
-            this.txtTelefonoFVC.Size = new System.Drawing.Size(434, 22);
-            this.txtTelefonoFVC.TabIndex = 8;
-            // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.txtRedesFVC);
-            this.panel6.Controls.Add(this.label4);
-            this.panel6.Location = new System.Drawing.Point(0, 229);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(434, 56);
-            this.panel6.TabIndex = 5;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label4.Location = new System.Drawing.Point(3, 6);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(131, 20);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Redes Sociales:";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // txtRedesFVC
-            // 
-            this.txtRedesFVC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(63)))), ((int)(((byte)(62)))));
-            this.txtRedesFVC.ForeColor = System.Drawing.SystemColors.Control;
-            this.txtRedesFVC.Location = new System.Drawing.Point(0, 30);
-            this.txtRedesFVC.Name = "txtRedesFVC";
-            this.txtRedesFVC.Size = new System.Drawing.Size(434, 22);
-            this.txtRedesFVC.TabIndex = 2;
+            btnEliminarFVC.BackColor = System.Drawing.Color.DimGray;
+            btnEliminarFVC.Cursor = System.Windows.Forms.Cursors.Hand;
+            btnEliminarFVC.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            btnEliminarFVC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            btnEliminarFVC.Location = new System.Drawing.Point(29, 120);
+            btnEliminarFVC.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            btnEliminarFVC.Name = "btnEliminarFVC";
+            btnEliminarFVC.Size = new System.Drawing.Size(175, 56);
+            btnEliminarFVC.TabIndex = 1;
+            btnEliminarFVC.Text = "Eliminar";
+            btnEliminarFVC.UseVisualStyleBackColor = false;
+            btnEliminarFVC.Click += btnEliminarFVC_Click;
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.panel6);
-            this.panel1.Controls.Add(this.panel5);
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(98, 113);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(434, 295);
-            this.panel1.TabIndex = 4;
+            panel1.Controls.Add(panel6);
+            panel1.Controls.Add(panel5);
+            panel1.Controls.Add(panel3);
+            panel1.Controls.Add(panel4);
+            panel1.Controls.Add(panel2);
+            panel1.Location = new System.Drawing.Point(98, 141);
+            panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            panel1.Name = "panel1";
+            panel1.Size = new System.Drawing.Size(434, 369);
+            panel1.TabIndex = 4;
+            // 
+            // panel6
+            // 
+            panel6.Controls.Add(txtRedesFVC);
+            panel6.Controls.Add(label4);
+            panel6.Location = new System.Drawing.Point(0, 286);
+            panel6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            panel6.Name = "panel6";
+            panel6.Size = new System.Drawing.Size(434, 70);
+            panel6.TabIndex = 5;
+            // 
+            // txtRedesFVC
+            // 
+            txtRedesFVC.BackColor = System.Drawing.Color.FromArgb(64, 63, 62);
+            txtRedesFVC.ForeColor = System.Drawing.SystemColors.Control;
+            txtRedesFVC.Location = new System.Drawing.Point(0, 38);
+            txtRedesFVC.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            txtRedesFVC.Name = "txtRedesFVC";
+            txtRedesFVC.Size = new System.Drawing.Size(434, 27);
+            txtRedesFVC.TabIndex = 2;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            label4.Location = new System.Drawing.Point(3, 8);
+            label4.Name = "label4";
+            label4.Size = new System.Drawing.Size(131, 20);
+            label4.TabIndex = 3;
+            label4.Text = "Redes Sociales:";
+            label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel5
+            // 
+            panel5.Controls.Add(txtTelefonoFVC);
+            panel5.Controls.Add(label3);
+            panel5.Location = new System.Drawing.Point(0, 216);
+            panel5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            panel5.Name = "panel5";
+            panel5.Size = new System.Drawing.Size(434, 70);
+            panel5.TabIndex = 5;
+            // 
+            // txtTelefonoFVC
+            // 
+            txtTelefonoFVC.BackColor = System.Drawing.Color.FromArgb(64, 63, 62);
+            txtTelefonoFVC.ForeColor = System.Drawing.SystemColors.Control;
+            txtTelefonoFVC.Location = new System.Drawing.Point(0, 41);
+            txtTelefonoFVC.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            txtTelefonoFVC.Name = "txtTelefonoFVC";
+            txtTelefonoFVC.Size = new System.Drawing.Size(434, 27);
+            txtTelefonoFVC.TabIndex = 8;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            label3.Location = new System.Drawing.Point(3, 8);
+            label3.Name = "label3";
+            label3.Size = new System.Drawing.Size(78, 20);
+            label3.TabIndex = 3;
+            label3.Text = "Teléfono:";
+            label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            label3.Click += label3_Click;
+            // 
+            // panel3
+            // 
+            panel3.Controls.Add(txtApellidoFVC);
+            panel3.Controls.Add(label1);
+            panel3.Location = new System.Drawing.Point(0, 70);
+            panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            panel3.Name = "panel3";
+            panel3.Size = new System.Drawing.Size(434, 70);
+            panel3.TabIndex = 5;
+            // 
+            // txtApellidoFVC
+            // 
+            txtApellidoFVC.BackColor = System.Drawing.Color.FromArgb(64, 63, 62);
+            txtApellidoFVC.ForeColor = System.Drawing.SystemColors.Control;
+            txtApellidoFVC.Location = new System.Drawing.Point(0, 38);
+            txtApellidoFVC.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            txtApellidoFVC.Name = "txtApellidoFVC";
+            txtApellidoFVC.Size = new System.Drawing.Size(434, 27);
+            txtApellidoFVC.TabIndex = 8;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            label1.Location = new System.Drawing.Point(3, 8);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(73, 20);
+            label1.TabIndex = 3;
+            label1.Text = "Apellido:";
+            label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel4
+            // 
+            panel4.Controls.Add(label2);
+            panel4.Controls.Add(txtNombreArtisticoFVC);
+            panel4.Location = new System.Drawing.Point(0, 148);
+            panel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            panel4.Name = "panel4";
+            panel4.Size = new System.Drawing.Size(434, 70);
+            panel4.TabIndex = 5;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            label2.Location = new System.Drawing.Point(3, 9);
+            label2.Name = "label2";
+            label2.Size = new System.Drawing.Size(140, 20);
+            label2.TabIndex = 7;
+            label2.Text = "Nombre Artistico:";
+            label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // txtNombreArtisticoFVC
+            // 
+            txtNombreArtisticoFVC.BackColor = System.Drawing.Color.FromArgb(64, 63, 62);
+            txtNombreArtisticoFVC.ForeColor = System.Drawing.SystemColors.Control;
+            txtNombreArtisticoFVC.Location = new System.Drawing.Point(0, 38);
+            txtNombreArtisticoFVC.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            txtNombreArtisticoFVC.Name = "txtNombreArtisticoFVC";
+            txtNombreArtisticoFVC.Size = new System.Drawing.Size(434, 27);
+            txtNombreArtisticoFVC.TabIndex = 2;
+            // 
+            // panel2
+            // 
+            panel2.Controls.Add(txtNombreFVC);
+            panel2.Controls.Add(lblNombreProyecto);
+            panel2.Location = new System.Drawing.Point(0, 0);
+            panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            panel2.Name = "panel2";
+            panel2.Size = new System.Drawing.Size(434, 70);
+            panel2.TabIndex = 4;
+            // 
+            // txtNombreFVC
+            // 
+            txtNombreFVC.BackColor = System.Drawing.Color.FromArgb(64, 63, 62);
+            txtNombreFVC.ForeColor = System.Drawing.SystemColors.Control;
+            txtNombreFVC.Location = new System.Drawing.Point(0, 38);
+            txtNombreFVC.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            txtNombreFVC.Name = "txtNombreFVC";
+            txtNombreFVC.Size = new System.Drawing.Size(434, 27);
+            txtNombreFVC.TabIndex = 2;
+            // 
+            // lblNombreProyecto
+            // 
+            lblNombreProyecto.AutoSize = true;
+            lblNombreProyecto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            lblNombreProyecto.Location = new System.Drawing.Point(3, 5);
+            lblNombreProyecto.Name = "lblNombreProyecto";
+            lblNombreProyecto.Size = new System.Drawing.Size(73, 20);
+            lblNombreProyecto.TabIndex = 3;
+            lblNombreProyecto.Text = "Nombre:";
+            lblNombreProyecto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            lblNombreProyecto.Click += lblNombreProyecto_Click;
             // 
             // FormVerCliente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(74)))), ((int)(((byte)(74)))));
-            this.ClientSize = new System.Drawing.Size(1000, 815);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.txtBuscarClienteFVC);
-            this.Controls.Add(this.labelTitulo);
-            this.Controls.Add(this.dGVFormVerClientes);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FormVerCliente";
-            this.Text = "FormVerCliente";
-            ((System.ComponentModel.ISupportInitialize)(this.dGVFormVerClientes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.panel10.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            BackColor = System.Drawing.Color.FromArgb(74, 74, 74);
+            ClientSize = new System.Drawing.Size(1000, 1019);
+            Controls.Add(groupBox1);
+            Controls.Add(pictureBox1);
+            Controls.Add(txtBuscarClienteFVC);
+            Controls.Add(labelTitulo);
+            Controls.Add(dGVFormVerClientes);
+            FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            Name = "FormVerCliente";
+            Text = "FormVerCliente";
+            Load += FormVerCliente_Load;
+            ((System.ComponentModel.ISupportInitialize)dGVFormVerClientes).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            groupBox1.ResumeLayout(false);
+            panel10.ResumeLayout(false);
+            panel1.ResumeLayout(false);
+            panel6.ResumeLayout(false);
+            panel6.PerformLayout();
+            panel5.ResumeLayout(false);
+            panel5.PerformLayout();
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
+            panel4.ResumeLayout(false);
+            panel4.PerformLayout();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
