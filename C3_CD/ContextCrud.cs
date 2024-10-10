@@ -13,7 +13,7 @@ namespace C3_CD
         public ContextCrud(DbContextOptions<ContextCrud> options) : base(options) { }
 
         public DbSet<C4_EN.Proyecto> Proyectos { get; set; }
-        public DbSet<C4_EN.Servicio> Servicios { get; set; }
+        //public DbSet<C4_EN.Servicio> Servicios { get; set; }
         public DbSet<C4_EN.Cliente> Clientes { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -23,10 +23,10 @@ namespace C3_CD
             entidadProyecto.HasKey(e => e.Id);
             entidadProyecto.Property(e => e.Id).ValueGeneratedOnAdd();
 
-            var entidadServicio = modelBuilder.Entity<C4_EN.Servicio>();
+            /*var entidadServicio = modelBuilder.Entity<C4_EN.Servicio>();
             entidadServicio.ToTable("Servicios");
             entidadServicio.HasKey(e => e.Id);
-            entidadServicio.Property(e => e.Id).ValueGeneratedOnAdd();
+            entidadServicio.Property(e => e.Id).ValueGeneratedOnAdd();*/
 
             var entidadCliente = modelBuilder.Entity<C4_EN.Cliente>();
             entidadCliente.ToTable("Clientes");

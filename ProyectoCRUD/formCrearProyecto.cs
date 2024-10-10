@@ -51,7 +51,7 @@ namespace ProyectoCRUD
 
         private async void btnAgregarProyecto_Click(object sender, EventArgs e)
         {
-            bool state = await _proyectoNegocio.CrearProyecto(txtNombreProyectoFCP.Text, float.Parse(txtCostoProyectoFCP.Text), checkBoxDescuentoFCP.Checked, comboBox2.Text, txtInicioProyectoFCP.Text, txtCierreProyectoFCP.Text);
+            bool state = await _proyectoNegocio.CrearProyecto(txtNombreProyectoFCP.Text, comboBox1.Text, txtNombreClienteFCP.Text, float.Parse(txtCostoProyectoFCP.Text), checkBoxDescuentoFCP.Checked, comboBox2.Text, txtInicioProyectoFCP.Text, txtCierreProyectoFCP.Text);
         }
 
         private void label7_Click(object sender, EventArgs e)

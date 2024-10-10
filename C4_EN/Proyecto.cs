@@ -4,6 +4,8 @@
     {
         public int Id { get; set; }
         public string NombreProyecto { get; set; }
+        public string TipoServicio { get; set; }
+        public string NombreCliente { get; set; }
         public float CostoTotal { get; set; }
         public bool Descuento { get; set; }
         public string EstadoPago { get; set; }
@@ -15,9 +17,11 @@
 
         }
 
-        public Proyecto(string nombreProyecto, float costoTotal, bool descuento, string estadoPago, DateTime fechaInicio, DateTime fechaFinal)
+        public Proyecto(string nombreProyecto, string tipoServicio, string nombreCliente, float costoTotal, bool descuento, string estadoPago, DateTime fechaInicio, DateTime fechaFinal)
         {
             NombreProyecto = nombreProyecto;
+            TipoServicio = tipoServicio;
+            NombreCliente = nombreCliente;
             CostoTotal = costoTotal;
             Descuento = descuento;
             EstadoPago = estadoPago;

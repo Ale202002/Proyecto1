@@ -28,5 +28,10 @@ namespace ProyectoCRUD
         {
             bool state = await _clienteNegocio.CrearCliente(txtNombreClienteFCC.Text, txtApellidoFCC.Text, txtNombreArtisticoFCC.Text, txtTelefonoFCC.Text, txtRedesSocialesFCC.Text);
         }
+
+        private void btnBorrarDatosCliente_Click(object sender, EventArgs e)
+        {
+            txtNombreArtisticoFCC.Text = "";
+        }
     }
 }
