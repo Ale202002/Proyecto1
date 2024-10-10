@@ -1,4 +1,5 @@
-﻿using System;
+﻿using C2_CN;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace ProyectoCRUD
 {
     public partial class FormCrearCliente : Form
     {
+        ClienteNegocio _clienteNegocio = new ClienteNegocio();
         public FormCrearCliente()
         {
             InitializeComponent();
@@ -20,6 +22,11 @@ namespace ProyectoCRUD
         private void FormCrearCliente_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private async void btnAgregarDatosCliente_Click(object sender, EventArgs e)
+        {
+            bool state = await _clienteNegocio.CrearCliente(txtNombreClienteFCC.Text, txtApellidoFCC.Text, txtNombreArtisticoFCC.Text, txtTelefonoFCC.Text, txtRedesSocialesFCC.Text);
         }
     }
 }

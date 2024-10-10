@@ -1,145 +1,41 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0F29570E-9BFD-431B-9B45-F037DB0CA36A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>false</UseWPF> <!-- Cambiar a true si usas WPF -->
+    <UseWindowsForms>true</UseWindowsForms> <!-- true si es Windows Forms -->
     <RootNamespace>ProyectoCRUD</RootNamespace>
     <AssemblyName>ProyectoCRUD</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <Deterministic>true</Deterministic>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
+
   <ItemGroup>
+    <!-- Referencias a ensamblados del framework -->
     <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Messaging" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
+
   <ItemGroup>
-    <Compile Include="FormCrearCliente.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormCrearCliente.Designer.cs">
-      <DependentUpon>FormCrearCliente.cs</DependentUpon>
-    </Compile>
-    <Compile Include="formCrearProyecto.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="formCrearProyecto.Designer.cs">
-      <DependentUpon>formCrearProyecto.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormVerCliente.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormVerCliente.Designer.cs">
-      <DependentUpon>FormVerCliente.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormVerProyectos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormVerProyectos.Designer.cs">
-      <DependentUpon>FormVerProyectos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmMenuPrincipal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmMenuPrincipal.Designer.cs">
-      <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormCrearCliente.resx">
-      <DependentUpon>FormCrearCliente.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="formCrearProyecto.resx">
-      <DependentUpon>formCrearProyecto.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormVerCliente.resx">
-      <DependentUpon>FormVerCliente.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormVerProyectos.resx">
-      <DependentUpon>FormVerProyectos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmMenuPrincipal.resx">
-      <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Settings.settings</DependentUpon>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
+    <!-- Otros archivos no compilados, como imágenes -->
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\LOGO RAP LAB SALES MANAGER.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\plus.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\search.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\search %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\search %282%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\info %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
+    <None Include="Resources\search (1).png" />
+    <None Include="Resources\search (2).png" />
+    <None Include="Resources\info (1).png" />
     <None Include="Resources\minimize.png" />
+    <None Include="Resources\minimize (1).png" />
   </ItemGroup>
+
   <ItemGroup>
-    <None Include="Resources\minimize %281%29.png" />
+    <!-- Referencia a otro proyecto -->
+    <ProjectReference Include="..\C2_CN\C2_CN.csproj" />
   </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+
 </Project>

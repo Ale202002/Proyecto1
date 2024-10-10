@@ -8,17 +8,19 @@ namespace C4_EN
 {
     public class Servicio
     {
-        private int id;
-        private string nombreServicio;
-        private float precio;
+        public int Id { get; set; }
+        public string NombreServicio { get; set; }
+        public float Precio { get; set; }
 
         public Servicio()
         {
 
         }
 
-        public string NombreServicio { get => nombreServicio; set => nombreServicio = value; }
-        public float Precio { get => precio; set => precio = value; }
-        public int Id { get => id; set => id = value; }
+        public Servicio(string nombreServicio, float precio)
+        {
+            NombreServicio = nombreServicio;
+            Precio = precio;
+        }
     }
 }

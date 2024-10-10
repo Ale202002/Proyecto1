@@ -8,23 +8,25 @@ namespace C4_EN
 {
     public class Cliente
     {
-        private int id;
-        private string name;
-        private string apellido;
-        private string nombreArtistico;
-        private int telefono;
-        private string url;
-
+        public int Id { get; set; }
+        public string Nombre { get; set; }
+        public string Apellido { get; set; }
+        public string NombreArtistico { get; set; }
+        public string Telefono { get; set; }
+        public string Url { get; set; }
+        public DateTime FechaRegistro { get; set; }
+        
         public Cliente()
         {
 
         }
-
-        public int Id { get => id; set => id = value; }
-        public string Name { get => name; set => name = value; }
-        public string Apellido { get => apellido; set => apellido = value; }
-        public string NombreArtistico { get => nombreArtistico; set => nombreArtistico = value; }
-        public int Telefono { get => telefono; set => telefono = value; }
-        public string Url { get => url; set => url = value; }
+        public Cliente(string nombre, string apellido, string nombreArtistico, string telefono, string url)
+        {
+            Nombre = nombre;
+            Apellido = apellido;
+            NombreArtistico = nombreArtistico;
+            Telefono = telefono;
+            Url = url;
+        }
     }
 }
