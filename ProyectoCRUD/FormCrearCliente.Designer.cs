@@ -28,286 +28,303 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.txtTelefonoFCC = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.txtRedesSocialesFCC = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.txtApellidoFCC = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtNombreArtisticoFCC = new System.Windows.Forms.TextBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.txtNombreClienteFCC = new System.Windows.Forms.TextBox();
-            this.lblNombreProyecto = new System.Windows.Forms.Label();
-            this.btnAgregarDatosCliente = new System.Windows.Forms.Button();
-            this.btnBorrarDatosCliente = new System.Windows.Forms.Button();
-            this.listBoxCrearCliente = new System.Windows.Forms.ListBox();
-            this.btnGuardarClienteFCC = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.SuspendLayout();
+            groupBox1 = new System.Windows.Forms.GroupBox();
+            panel1 = new System.Windows.Forms.Panel();
+            panel5 = new System.Windows.Forms.Panel();
+            txtTelefonoFCC = new System.Windows.Forms.TextBox();
+            label3 = new System.Windows.Forms.Label();
+            panel6 = new System.Windows.Forms.Panel();
+            txtRedesSocialesFCC = new System.Windows.Forms.TextBox();
+            label4 = new System.Windows.Forms.Label();
+            panel3 = new System.Windows.Forms.Panel();
+            txtApellidoFCC = new System.Windows.Forms.TextBox();
+            label1 = new System.Windows.Forms.Label();
+            panel4 = new System.Windows.Forms.Panel();
+            label2 = new System.Windows.Forms.Label();
+            txtNombreArtisticoFCC = new System.Windows.Forms.TextBox();
+            panel2 = new System.Windows.Forms.Panel();
+            txtNombreClienteFCC = new System.Windows.Forms.TextBox();
+            lblNombreProyecto = new System.Windows.Forms.Label();
+            btnAgregarDatosCliente = new System.Windows.Forms.Button();
+            btnBorrarDatosCliente = new System.Windows.Forms.Button();
+            listBoxCrearCliente = new System.Windows.Forms.ListBox();
+            btnGuardarClienteFCC = new System.Windows.Forms.Button();
+            groupBox1.SuspendLayout();
+            panel1.SuspendLayout();
+            panel5.SuspendLayout();
+            panel6.SuspendLayout();
+            panel3.SuspendLayout();
+            panel4.SuspendLayout();
+            panel2.SuspendLayout();
+            SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.panel1);
-            this.groupBox1.Controls.Add(this.btnAgregarDatosCliente);
-            this.groupBox1.Controls.Add(this.btnBorrarDatosCliente);
-            this.groupBox1.ForeColor = System.Drawing.SystemColors.Control;
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(976, 565);
-            this.groupBox1.TabIndex = 1;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Menú Crear Cliente";
+            groupBox1.Controls.Add(panel1);
+            groupBox1.Controls.Add(btnAgregarDatosCliente);
+            groupBox1.Controls.Add(btnBorrarDatosCliente);
+            groupBox1.ForeColor = System.Drawing.SystemColors.Control;
+            groupBox1.Location = new System.Drawing.Point(12, 15);
+            groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            groupBox1.Size = new System.Drawing.Size(976, 706);
+            groupBox1.TabIndex = 1;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Menú Crear Cliente";
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.panel5);
-            this.panel1.Controls.Add(this.panel6);
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(263, 76);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(434, 352);
-            this.panel1.TabIndex = 4;
+            panel1.Controls.Add(panel5);
+            panel1.Controls.Add(panel6);
+            panel1.Controls.Add(panel3);
+            panel1.Controls.Add(panel4);
+            panel1.Controls.Add(panel2);
+            panel1.Location = new System.Drawing.Point(263, 95);
+            panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            panel1.Name = "panel1";
+            panel1.Size = new System.Drawing.Size(434, 440);
+            panel1.TabIndex = 4;
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.txtTelefonoFCC);
-            this.panel5.Controls.Add(this.label3);
-            this.panel5.Location = new System.Drawing.Point(0, 191);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(434, 77);
-            this.panel5.TabIndex = 5;
+            panel5.Controls.Add(txtTelefonoFCC);
+            panel5.Controls.Add(label3);
+            panel5.Location = new System.Drawing.Point(0, 239);
+            panel5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            panel5.Name = "panel5";
+            panel5.Size = new System.Drawing.Size(434, 96);
+            panel5.TabIndex = 5;
             // 
             // txtTelefonoFCC
             // 
-            this.txtTelefonoFCC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(63)))), ((int)(((byte)(62)))));
-            this.txtTelefonoFCC.ForeColor = System.Drawing.SystemColors.Control;
-            this.txtTelefonoFCC.Location = new System.Drawing.Point(0, 34);
-            this.txtTelefonoFCC.Name = "txtTelefonoFCC";
-            this.txtTelefonoFCC.Size = new System.Drawing.Size(434, 22);
-            this.txtTelefonoFCC.TabIndex = 4;
+            txtTelefonoFCC.BackColor = System.Drawing.Color.FromArgb(64, 63, 62);
+            txtTelefonoFCC.ForeColor = System.Drawing.SystemColors.Control;
+            txtTelefonoFCC.Location = new System.Drawing.Point(0, 42);
+            txtTelefonoFCC.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            txtTelefonoFCC.Name = "txtTelefonoFCC";
+            txtTelefonoFCC.Size = new System.Drawing.Size(434, 27);
+            txtTelefonoFCC.TabIndex = 4;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label3.Location = new System.Drawing.Point(3, 11);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(78, 20);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Telefono:";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            label3.AutoSize = true;
+            label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            label3.Location = new System.Drawing.Point(3, 14);
+            label3.Name = "label3";
+            label3.Size = new System.Drawing.Size(78, 20);
+            label3.TabIndex = 3;
+            label3.Text = "Telefono:";
+            label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.txtRedesSocialesFCC);
-            this.panel6.Controls.Add(this.label4);
-            this.panel6.Location = new System.Drawing.Point(0, 265);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(434, 59);
-            this.panel6.TabIndex = 5;
+            panel6.Controls.Add(txtRedesSocialesFCC);
+            panel6.Controls.Add(label4);
+            panel6.Location = new System.Drawing.Point(0, 331);
+            panel6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            panel6.Name = "panel6";
+            panel6.Size = new System.Drawing.Size(434, 74);
+            panel6.TabIndex = 5;
             // 
             // txtRedesSocialesFCC
             // 
-            this.txtRedesSocialesFCC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(63)))), ((int)(((byte)(62)))));
-            this.txtRedesSocialesFCC.ForeColor = System.Drawing.SystemColors.Control;
-            this.txtRedesSocialesFCC.Location = new System.Drawing.Point(0, 30);
-            this.txtRedesSocialesFCC.Name = "txtRedesSocialesFCC";
-            this.txtRedesSocialesFCC.Size = new System.Drawing.Size(434, 22);
-            this.txtRedesSocialesFCC.TabIndex = 2;
+            txtRedesSocialesFCC.BackColor = System.Drawing.Color.FromArgb(64, 63, 62);
+            txtRedesSocialesFCC.ForeColor = System.Drawing.SystemColors.Control;
+            txtRedesSocialesFCC.Location = new System.Drawing.Point(0, 38);
+            txtRedesSocialesFCC.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            txtRedesSocialesFCC.Name = "txtRedesSocialesFCC";
+            txtRedesSocialesFCC.Size = new System.Drawing.Size(434, 27);
+            txtRedesSocialesFCC.TabIndex = 2;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label4.Location = new System.Drawing.Point(3, 6);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(131, 20);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Redes Sociales:";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            label4.AutoSize = true;
+            label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            label4.Location = new System.Drawing.Point(3, 8);
+            label4.Name = "label4";
+            label4.Size = new System.Drawing.Size(131, 20);
+            label4.TabIndex = 3;
+            label4.Text = "Redes Sociales:";
+            label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.txtApellidoFCC);
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Location = new System.Drawing.Point(0, 65);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(434, 68);
-            this.panel3.TabIndex = 5;
+            panel3.Controls.Add(txtApellidoFCC);
+            panel3.Controls.Add(label1);
+            panel3.Location = new System.Drawing.Point(0, 81);
+            panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            panel3.Name = "panel3";
+            panel3.Size = new System.Drawing.Size(434, 85);
+            panel3.TabIndex = 5;
             // 
             // txtApellidoFCC
             // 
-            this.txtApellidoFCC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(63)))), ((int)(((byte)(62)))));
-            this.txtApellidoFCC.ForeColor = System.Drawing.SystemColors.Control;
-            this.txtApellidoFCC.Location = new System.Drawing.Point(0, 34);
-            this.txtApellidoFCC.Name = "txtApellidoFCC";
-            this.txtApellidoFCC.Size = new System.Drawing.Size(434, 22);
-            this.txtApellidoFCC.TabIndex = 8;
+            txtApellidoFCC.BackColor = System.Drawing.Color.FromArgb(64, 63, 62);
+            txtApellidoFCC.ForeColor = System.Drawing.SystemColors.Control;
+            txtApellidoFCC.Location = new System.Drawing.Point(0, 42);
+            txtApellidoFCC.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            txtApellidoFCC.Name = "txtApellidoFCC";
+            txtApellidoFCC.Size = new System.Drawing.Size(434, 27);
+            txtApellidoFCC.TabIndex = 8;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label1.Location = new System.Drawing.Point(3, 6);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 20);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Apellido:";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            label1.AutoSize = true;
+            label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            label1.Location = new System.Drawing.Point(3, 8);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(73, 20);
+            label1.TabIndex = 3;
+            label1.Text = "Apellido:";
+            label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.label2);
-            this.panel4.Controls.Add(this.txtNombreArtisticoFCC);
-            this.panel4.Location = new System.Drawing.Point(0, 129);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(434, 56);
-            this.panel4.TabIndex = 5;
+            panel4.Controls.Add(label2);
+            panel4.Controls.Add(txtNombreArtisticoFCC);
+            panel4.Location = new System.Drawing.Point(0, 161);
+            panel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            panel4.Name = "panel4";
+            panel4.Size = new System.Drawing.Size(434, 70);
+            panel4.TabIndex = 5;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label2.Location = new System.Drawing.Point(3, 7);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(140, 20);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Nombre Artistico:";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            label2.AutoSize = true;
+            label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            label2.Location = new System.Drawing.Point(3, 9);
+            label2.Name = "label2";
+            label2.Size = new System.Drawing.Size(140, 20);
+            label2.TabIndex = 7;
+            label2.Text = "Nombre Artistico:";
+            label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // txtNombreArtisticoFCC
             // 
-            this.txtNombreArtisticoFCC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(63)))), ((int)(((byte)(62)))));
-            this.txtNombreArtisticoFCC.ForeColor = System.Drawing.SystemColors.Control;
-            this.txtNombreArtisticoFCC.Location = new System.Drawing.Point(0, 30);
-            this.txtNombreArtisticoFCC.Name = "txtNombreArtisticoFCC";
-            this.txtNombreArtisticoFCC.Size = new System.Drawing.Size(434, 22);
-            this.txtNombreArtisticoFCC.TabIndex = 2;
+            txtNombreArtisticoFCC.BackColor = System.Drawing.Color.FromArgb(64, 63, 62);
+            txtNombreArtisticoFCC.ForeColor = System.Drawing.SystemColors.Control;
+            txtNombreArtisticoFCC.Location = new System.Drawing.Point(0, 38);
+            txtNombreArtisticoFCC.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            txtNombreArtisticoFCC.Name = "txtNombreArtisticoFCC";
+            txtNombreArtisticoFCC.Size = new System.Drawing.Size(434, 27);
+            txtNombreArtisticoFCC.TabIndex = 2;
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.txtNombreClienteFCC);
-            this.panel2.Controls.Add(this.lblNombreProyecto);
-            this.panel2.Location = new System.Drawing.Point(0, 6);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(434, 62);
-            this.panel2.TabIndex = 4;
+            panel2.Controls.Add(txtNombreClienteFCC);
+            panel2.Controls.Add(lblNombreProyecto);
+            panel2.Location = new System.Drawing.Point(0, 8);
+            panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            panel2.Name = "panel2";
+            panel2.Size = new System.Drawing.Size(434, 78);
+            panel2.TabIndex = 4;
             // 
             // txtNombreClienteFCC
             // 
-            this.txtNombreClienteFCC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(63)))), ((int)(((byte)(62)))));
-            this.txtNombreClienteFCC.ForeColor = System.Drawing.SystemColors.Control;
-            this.txtNombreClienteFCC.Location = new System.Drawing.Point(0, 30);
-            this.txtNombreClienteFCC.Name = "txtNombreClienteFCC";
-            this.txtNombreClienteFCC.Size = new System.Drawing.Size(434, 22);
-            this.txtNombreClienteFCC.TabIndex = 2;
+            txtNombreClienteFCC.BackColor = System.Drawing.Color.FromArgb(64, 63, 62);
+            txtNombreClienteFCC.ForeColor = System.Drawing.SystemColors.Control;
+            txtNombreClienteFCC.Location = new System.Drawing.Point(0, 38);
+            txtNombreClienteFCC.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            txtNombreClienteFCC.Name = "txtNombreClienteFCC";
+            txtNombreClienteFCC.Size = new System.Drawing.Size(434, 27);
+            txtNombreClienteFCC.TabIndex = 2;
             // 
             // lblNombreProyecto
             // 
-            this.lblNombreProyecto.AutoSize = true;
-            this.lblNombreProyecto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lblNombreProyecto.Location = new System.Drawing.Point(3, 4);
-            this.lblNombreProyecto.Name = "lblNombreProyecto";
-            this.lblNombreProyecto.Size = new System.Drawing.Size(157, 20);
-            this.lblNombreProyecto.TabIndex = 3;
-            this.lblNombreProyecto.Text = "Nombre del Cliente:";
-            this.lblNombreProyecto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            lblNombreProyecto.AutoSize = true;
+            lblNombreProyecto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            lblNombreProyecto.Location = new System.Drawing.Point(3, 5);
+            lblNombreProyecto.Name = "lblNombreProyecto";
+            lblNombreProyecto.Size = new System.Drawing.Size(157, 20);
+            lblNombreProyecto.TabIndex = 3;
+            lblNombreProyecto.Text = "Nombre del Cliente:";
+            lblNombreProyecto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // btnAgregarDatosCliente
             // 
-            this.btnAgregarDatosCliente.BackColor = System.Drawing.Color.DimGray;
-            this.btnAgregarDatosCliente.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAgregarDatosCliente.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnAgregarDatosCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarDatosCliente.Location = new System.Drawing.Point(263, 434);
-            this.btnAgregarDatosCliente.Name = "btnAgregarDatosCliente";
-            this.btnAgregarDatosCliente.Size = new System.Drawing.Size(175, 45);
-            this.btnAgregarDatosCliente.TabIndex = 1;
-            this.btnAgregarDatosCliente.Text = "Agregar Datos";
-            this.btnAgregarDatosCliente.UseVisualStyleBackColor = false;
-            this.btnAgregarDatosCliente.Click += new System.EventHandler(this.btnAgregarDatosCliente_Click);
+            btnAgregarDatosCliente.BackColor = System.Drawing.Color.DimGray;
+            btnAgregarDatosCliente.Cursor = System.Windows.Forms.Cursors.Hand;
+            btnAgregarDatosCliente.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            btnAgregarDatosCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            btnAgregarDatosCliente.Location = new System.Drawing.Point(263, 542);
+            btnAgregarDatosCliente.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            btnAgregarDatosCliente.Name = "btnAgregarDatosCliente";
+            btnAgregarDatosCliente.Size = new System.Drawing.Size(175, 56);
+            btnAgregarDatosCliente.TabIndex = 1;
+            btnAgregarDatosCliente.Text = "Agregar Datos";
+            btnAgregarDatosCliente.UseVisualStyleBackColor = false;
+            btnAgregarDatosCliente.Click += btnAgregarDatosCliente_Click;
             // 
             // btnBorrarDatosCliente
             // 
-            this.btnBorrarDatosCliente.BackColor = System.Drawing.Color.DimGray;
-            this.btnBorrarDatosCliente.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBorrarDatosCliente.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnBorrarDatosCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBorrarDatosCliente.Location = new System.Drawing.Point(522, 434);
-            this.btnBorrarDatosCliente.Name = "btnBorrarDatosCliente";
-            this.btnBorrarDatosCliente.Size = new System.Drawing.Size(175, 45);
-            this.btnBorrarDatosCliente.TabIndex = 0;
-            this.btnBorrarDatosCliente.Text = "Borrar Datos";
-            this.btnBorrarDatosCliente.UseVisualStyleBackColor = false;
+            btnBorrarDatosCliente.BackColor = System.Drawing.Color.DimGray;
+            btnBorrarDatosCliente.Cursor = System.Windows.Forms.Cursors.Hand;
+            btnBorrarDatosCliente.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            btnBorrarDatosCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            btnBorrarDatosCliente.Location = new System.Drawing.Point(522, 542);
+            btnBorrarDatosCliente.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            btnBorrarDatosCliente.Name = "btnBorrarDatosCliente";
+            btnBorrarDatosCliente.Size = new System.Drawing.Size(175, 56);
+            btnBorrarDatosCliente.TabIndex = 0;
+            btnBorrarDatosCliente.Text = "Borrar Datos";
+            btnBorrarDatosCliente.UseVisualStyleBackColor = false;
+            btnBorrarDatosCliente.Click += btnBorrarDatosCliente_Click;
             // 
             // listBoxCrearCliente
             // 
-            this.listBoxCrearCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(63)))), ((int)(((byte)(62)))));
-            this.listBoxCrearCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.listBoxCrearCliente.ForeColor = System.Drawing.Color.White;
-            this.listBoxCrearCliente.FormattingEnabled = true;
-            this.listBoxCrearCliente.ItemHeight = 20;
-            this.listBoxCrearCliente.Location = new System.Drawing.Point(12, 595);
-            this.listBoxCrearCliente.Name = "listBoxCrearCliente";
-            this.listBoxCrearCliente.Size = new System.Drawing.Size(976, 124);
-            this.listBoxCrearCliente.TabIndex = 2;
+            listBoxCrearCliente.BackColor = System.Drawing.Color.FromArgb(64, 63, 62);
+            listBoxCrearCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            listBoxCrearCliente.ForeColor = System.Drawing.Color.White;
+            listBoxCrearCliente.FormattingEnabled = true;
+            listBoxCrearCliente.Location = new System.Drawing.Point(12, 744);
+            listBoxCrearCliente.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            listBoxCrearCliente.Name = "listBoxCrearCliente";
+            listBoxCrearCliente.Size = new System.Drawing.Size(976, 144);
+            listBoxCrearCliente.TabIndex = 2;
             // 
             // btnGuardarClienteFCC
             // 
-            this.btnGuardarClienteFCC.BackColor = System.Drawing.Color.DimGray;
-            this.btnGuardarClienteFCC.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnGuardarClienteFCC.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnGuardarClienteFCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardarClienteFCC.ForeColor = System.Drawing.Color.White;
-            this.btnGuardarClienteFCC.Location = new System.Drawing.Point(405, 749);
-            this.btnGuardarClienteFCC.Name = "btnGuardarClienteFCC";
-            this.btnGuardarClienteFCC.Size = new System.Drawing.Size(175, 45);
-            this.btnGuardarClienteFCC.TabIndex = 6;
-            this.btnGuardarClienteFCC.Text = "Guardar Cliente";
-            this.btnGuardarClienteFCC.UseVisualStyleBackColor = false;
+            btnGuardarClienteFCC.BackColor = System.Drawing.Color.DimGray;
+            btnGuardarClienteFCC.Cursor = System.Windows.Forms.Cursors.Hand;
+            btnGuardarClienteFCC.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            btnGuardarClienteFCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            btnGuardarClienteFCC.ForeColor = System.Drawing.Color.White;
+            btnGuardarClienteFCC.Location = new System.Drawing.Point(405, 936);
+            btnGuardarClienteFCC.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            btnGuardarClienteFCC.Name = "btnGuardarClienteFCC";
+            btnGuardarClienteFCC.Size = new System.Drawing.Size(175, 56);
+            btnGuardarClienteFCC.TabIndex = 6;
+            btnGuardarClienteFCC.Text = "Guardar Cliente";
+            btnGuardarClienteFCC.UseVisualStyleBackColor = false;
             // 
             // FormCrearCliente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(74)))), ((int)(((byte)(74)))));
-            this.ClientSize = new System.Drawing.Size(1000, 815);
-            this.Controls.Add(this.btnGuardarClienteFCC);
-            this.Controls.Add(this.listBoxCrearCliente);
-            this.Controls.Add(this.groupBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FormCrearCliente";
-            this.Text = "FormCrearCliente";
-            this.Load += new System.EventHandler(this.FormCrearCliente_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            BackColor = System.Drawing.Color.FromArgb(74, 74, 74);
+            ClientSize = new System.Drawing.Size(1000, 1019);
+            Controls.Add(btnGuardarClienteFCC);
+            Controls.Add(listBoxCrearCliente);
+            Controls.Add(groupBox1);
+            FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            Name = "FormCrearCliente";
+            Text = "FormCrearCliente";
+            Load += FormCrearCliente_Load;
+            groupBox1.ResumeLayout(false);
+            panel1.ResumeLayout(false);
+            panel5.ResumeLayout(false);
+            panel5.PerformLayout();
+            panel6.ResumeLayout(false);
+            panel6.PerformLayout();
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
+            panel4.ResumeLayout(false);
+            panel4.PerformLayout();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
+            ResumeLayout(false);
         }
 
         #endregion

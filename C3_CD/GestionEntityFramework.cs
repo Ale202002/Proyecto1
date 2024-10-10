@@ -44,15 +44,15 @@ namespace C3_CD
             {
                 PropertyInfo propertyId = entity.GetType().GetProperty("Id");
                 PropertyInfo propertyDate = entity.GetType().GetProperty("FechaRegistro");
-                if (propertyDate != null && propertyDate.CanWrite && propertyDate.PropertyType != typeof(DateTime))
+                if (propertyId != null && propertyDate == null)
                 {
-                    propertyDate.SetValue(entity, DateTime.Now);
                     await context.Set<T>().AddAsync(entity);
                     Commit();
                     return true;
                 }
-                else if(propertyId != null)
+                else if (propertyDate != null && propertyDate.CanWrite)
                 {
+                    propertyDate.SetValue(entity, DateTime.Now);
                     await context.Set<T>().AddAsync(entity);
                     Commit();
                     return true;

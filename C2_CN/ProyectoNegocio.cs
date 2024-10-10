@@ -18,9 +18,9 @@ namespace C2_CN
             
         }
 
-        public async Task<bool> CrearProyecto(string nombreProyecto, float costoTotal, bool descuento, string estadoPago, string fechaInicio, string FechaFinal)
+        public async Task<bool> CrearProyecto(string nombreProyecto, string tipoServicio, string nombreCliente, float costoTotal, bool descuento, string estadoPago, string fechaInicio, string FechaFinal)
         {
-            Proyecto proyecto = new Proyecto(nombreProyecto, costoTotal, descuento, estadoPago, Convert.ToDateTime(fechaInicio), Convert.ToDateTime(FechaFinal));
+            Proyecto proyecto = new Proyecto(nombreProyecto, tipoServicio, nombreCliente, costoTotal, descuento, estadoPago, Convert.ToDateTime(fechaInicio), Convert.ToDateTime(FechaFinal));
             bool state = await _gestionDatos.CreateAsync(proyecto);
             if (state)
             {
