@@ -1,0 +1,37 @@
+SET GLOBAL time_zone = 'America/Argentina/Buenos_Aires';
+CREATE SCHEMA IF NOT EXISTS `Estudio` DEFAULT CHARACTER SET utf8 ;
+USE `Estudio` ;
+
+CREATE TABLE IF NOT EXISTS `Estudio`.`Clientes` (
+  `Id` INT AUTO_INCREMENT NOT NULL,
+  `Nombre` VARCHAR(20) NOT NULL,
+  `Apellido` VARCHAR(20) NOT NULL,
+  `NombreArtistico` VARCHAR(20) NOT NULL,
+  `Telefono` VARCHAR(15) NOT NULL,
+  `Url` VARCHAR(30) NOT NULL,
+  `FechaRegistro` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`Id`),
+  UNIQUE INDEX `Id_UNIQUE` (`Id`))
+ENGINE = InnoDB;
+
+CREATE TABLE IF NOT EXISTS `Estudio`.`Proyectos` (
+  `Id` INT AUTO_INCREMENT NOT NULL,
+  `NombreProyecto` VARCHAR(25) NOT NULL,
+  `TipoServicio` VARCHAR(40) NOT NULL,
+  `NombreCliente` VARCHAR(25) NOT NULL,
+  `CostoTotal` FLOAT NOT NULL,
+  `Descuento` BOOLEAN NOT NULL,
+  `EstadoPago` VARCHAR(15) NOT NULL,
+  `FechaInicio` DATE NOT NULL,
+  `FechaFinal` DATE NOT NULL,
+  PRIMARY KEY (`Id`),
+  UNIQUE INDEX `Id_UNIQUE` (`Id`))
+ENGINE = InnoDB;
+
+CREATE TABLE IF NOT EXISTS `Estudio`.`Servicios` (
+  `Id` INT AUTO_INCREMENT NOT NULL,
+  `NombreServicio` VARCHAR(20) NOT NULL,
+  `Precio` FLOAT NOT NULL,
+  PRIMARY KEY (`Id`),
+  UNIQUE INDEX `Id_UNIQUE` (`Id`))
+ENGINE = InnoDB;
